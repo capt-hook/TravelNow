@@ -1,0 +1,73 @@
+PODS:
+  - AFNetworking (1.3.4)
+  - ChameleonFramework (1.1.0)
+  - CocoaLumberjack (2.0.0-beta):
+    - CocoaLumberjack/CLI
+    - CocoaLumberjack/Core
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/CLI (2.0.0-beta):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Core (2.0.0-beta)
+  - CocoaLumberjack/Extensions (2.0.0-beta):
+    - CocoaLumberjack/Core
+  - ISO8601DateFormatterValueTransformer (0.6.0):
+    - RKValueTransformers (~> 1.1.0)
+  - JGProgressHUD (1.2.1)
+  - KVOController (1.0.1)
+  - libextobjc/EXTScope (0.4):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4)
+  - PureLayout (1.0.1)
+  - RestKit (0.23.3):
+    - RestKit/Core
+  - RestKit/Core (0.23.3):
+    - RestKit/CoreData
+    - RestKit/Network
+    - RestKit/ObjectMapping
+  - RestKit/CoreData (0.23.3):
+    - RestKit/ObjectMapping
+  - RestKit/Network (0.23.3):
+    - AFNetworking (~> 1.3.0)
+    - RestKit/ObjectMapping
+    - RestKit/Support
+    - SOCKit
+  - RestKit/ObjectMapping (0.23.3):
+    - ISO8601DateFormatterValueTransformer (~> 0.6.0)
+    - RestKit/Support
+    - RKValueTransformers (~> 1.1.0)
+  - RestKit/Support (0.23.3):
+    - TransitionKit (= 2.1.0)
+  - RKValueTransformers (1.1.0)
+  - SOCKit (1.1)
+  - TPKeyboardAvoiding (1.2.4)
+  - TransitionKit (2.1.0)
+  - UIAlertView-Blocks (1.0)
+
+DEPENDENCIES:
+  - ChameleonFramework
+  - CocoaLumberjack
+  - JGProgressHUD
+  - KVOController
+  - libextobjc/EXTScope
+  - PureLayout
+  - RestKit
+  - TPKeyboardAvoiding
+  - UIAlertView-Blocks
+
+SPEC CHECKSUMS:
+  AFNetworking: 80c4e0652b08eb34e25b9c0ff3c82556fe5967b4
+  ChameleonFramework: 9dd83c1e66b4385ed15cb8c18fac12f6a56bbe0d
+  CocoaLumberjack: aadc76d7bd6c839ca84b38ed50cbf89d7cf8c693
+  ISO8601DateFormatterValueTransformer: a705384ea6531255258e25b6480ba1180db703a0
+  JGProgressHUD: f3c0258684f318bc0009e893fdac0701de5cb75b
+  KVOController: e6ad4a058ab0ceed546802361adb89d322a22cf2
+  libextobjc: ba42e4111f433273a886cd54f0ddaddb7f62f82f
+  PureLayout: 972964b21dbcbc5cc36785aed16aba03176f057d
+  RestKit: 193a35cddae5198388977abaedad129f8acb978b
+  RKValueTransformers: b705e7b4651b9206b94600408462b74554bba969
+  SOCKit: d8d0dd3688ae1026c12367570da8fa8e1a6980fb
+  TPKeyboardAvoiding: 925e1e1912597d1a4956697eec3bd9656552153c
+  TransitionKit: 6a6f3ddda38ae758778aa889dcb930e4f8d64edc
+  UIAlertView-Blocks: f3271e84372beb97aea115cd1fb26ae66457f12f
+
+COCOAPODS: 0.33.1

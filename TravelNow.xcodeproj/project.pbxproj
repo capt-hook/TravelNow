@@ -10,15 +10,26 @@
 		500C022219B169EC0069DCFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500C022119B169EC0069DCFD /* Foundation.framework */; };
 		500C022419B169EC0069DCFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500C022319B169EC0069DCFD /* CoreGraphics.framework */; };
 		500C022619B169EC0069DCFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500C022519B169EC0069DCFD /* UIKit.framework */; };
-		500C022C19B169EC0069DCFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 500C022A19B169EC0069DCFD /* InfoPlist.strings */; };
-		500C022E19B169EC0069DCFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C022D19B169EC0069DCFD /* main.m */; };
 		500C023219B169EC0069DCFD /* TNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C023119B169EC0069DCFD /* TNAppDelegate.m */; };
-		500C023419B169EC0069DCFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 500C023319B169EC0069DCFD /* Images.xcassets */; };
 		500C023B19B169ED0069DCFD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500C023A19B169ED0069DCFD /* XCTest.framework */; };
 		500C023C19B169ED0069DCFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500C022119B169EC0069DCFD /* Foundation.framework */; };
 		500C023D19B169ED0069DCFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500C022519B169EC0069DCFD /* UIKit.framework */; };
-		500C024519B169ED0069DCFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 500C024319B169ED0069DCFD /* InfoPlist.strings */; };
 		500C024719B169ED0069DCFD /* TravelNowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C024619B169ED0069DCFD /* TravelNowTests.m */; };
+		500C025219B1BEBB0069DCFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 500C025119B1BEBB0069DCFD /* Images.xcassets */; };
+		500C025319B1BEBB0069DCFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 500C025119B1BEBB0069DCFD /* Images.xcassets */; };
+		500C025B19B1BEC40069DCFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 500C025819B1BEC40069DCFD /* InfoPlist.strings */; };
+		500C026319B1BECA0069DCFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 500C026019B1BECA0069DCFD /* InfoPlist.strings */; };
+		500C026619B1BF300069DCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500C026519B1BF300069DCFD /* Main.storyboard */; };
+		500C026719B1BF300069DCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500C026519B1BF300069DCFD /* Main.storyboard */; };
+		500C026F19B1BF4E0069DCFD /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 500C026D19B1BF4E0069DCFD /* Main.xcdatamodeld */; };
+		500C027019B1BF4E0069DCFD /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 500C026D19B1BF4E0069DCFD /* Main.xcdatamodeld */; };
+		500C027719B1BFA90069DCFD /* TNLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C027619B1BFA90069DCFD /* TNLoginViewController.m */; };
+		500C027819B1BFA90069DCFD /* TNLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C027619B1BFA90069DCFD /* TNLoginViewController.m */; };
+		500C027E19B1C0050069DCFD /* MHLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C027D19B1C0050069DCFD /* MHLog.m */; };
+		500C027F19B1C0050069DCFD /* MHLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C027D19B1C0050069DCFD /* MHLog.m */; };
+		500C028119B1C04A0069DCFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C028019B1C04A0069DCFD /* main.m */; };
+		500C028219B1C04A0069DCFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C028019B1C04A0069DCFD /* main.m */; };
+		992ABDFF4EFD47F8B45C9D7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7230D91EAC2648BEA27CC0B0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,18 +47,27 @@
 		500C022119B169EC0069DCFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		500C022319B169EC0069DCFD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		500C022519B169EC0069DCFD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		500C022919B169EC0069DCFD /* TravelNow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TravelNow-Info.plist"; sourceTree = "<group>"; };
-		500C022B19B169EC0069DCFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		500C022D19B169EC0069DCFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		500C022F19B169EC0069DCFD /* TravelNow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelNow-Prefix.pch"; sourceTree = "<group>"; };
 		500C023019B169EC0069DCFD /* TNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNAppDelegate.h; sourceTree = "<group>"; };
 		500C023119B169EC0069DCFD /* TNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNAppDelegate.m; sourceTree = "<group>"; };
-		500C023319B169EC0069DCFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		500C023919B169ED0069DCFD /* TravelNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		500C023A19B169ED0069DCFD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		500C024219B169ED0069DCFD /* TravelNowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TravelNowTests-Info.plist"; sourceTree = "<group>"; };
-		500C024419B169ED0069DCFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		500C024619B169ED0069DCFD /* TravelNowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravelNowTests.m; sourceTree = "<group>"; };
+		500C025119B1BEBB0069DCFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		500C025619B1BEC40069DCFD /* TravelNow-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TravelNow-Info.plist"; sourceTree = "<group>"; };
+		500C025919B1BEC40069DCFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		500C025E19B1BECA0069DCFD /* TravelNowTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TravelNowTests-Info.plist"; sourceTree = "<group>"; };
+		500C026119B1BECA0069DCFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		500C026519B1BF300069DCFD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		500C026E19B1BF4E0069DCFD /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		500C027519B1BFA80069DCFD /* TNLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNLoginViewController.h; sourceTree = "<group>"; };
+		500C027619B1BFA90069DCFD /* TNLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNLoginViewController.m; sourceTree = "<group>"; };
+		500C027C19B1C0050069DCFD /* MHLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHLog.h; sourceTree = "<group>"; };
+		500C027D19B1C0050069DCFD /* MHLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHLog.m; sourceTree = "<group>"; };
+		500C028019B1C04A0069DCFD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		500C028319B1C0640069DCFD /* TNMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNMacros.h; sourceTree = "<group>"; };
+		7230D91EAC2648BEA27CC0B0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9214DB765D743038C5ADFAB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 				500C022419B169EC0069DCFD /* CoreGraphics.framework in Frameworks */,
 				500C022619B169EC0069DCFD /* UIKit.framework in Frameworks */,
 				500C022219B169EC0069DCFD /* Foundation.framework in Frameworks */,
+				992ABDFF4EFD47F8B45C9D7B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +98,13 @@
 		500C021519B169EC0069DCFD = {
 			isa = PBXGroup;
 			children = (
+				500C025019B1BEBB0069DCFD /* Resources */,
 				500C022719B169EC0069DCFD /* TravelNow */,
 				500C024019B169ED0069DCFD /* TravelNowTests */,
+				500C027A19B1C0050069DCFD /* Lib */,
 				500C022019B169EC0069DCFD /* Frameworks */,
 				500C021F19B169EC0069DCFD /* Products */,
+				F9214DB765D743038C5ADFAB /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +124,7 @@
 				500C022319B169EC0069DCFD /* CoreGraphics.framework */,
 				500C022519B169EC0069DCFD /* UIKit.framework */,
 				500C023A19B169ED0069DCFD /* XCTest.framework */,
+				7230D91EAC2648BEA27CC0B0 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,41 +132,160 @@
 		500C022719B169EC0069DCFD /* TravelNow */ = {
 			isa = PBXGroup;
 			children = (
+				500C027119B1BF6F0069DCFD /* Controllers */,
+				500C027219B1BF6F0069DCFD /* Model */,
+				500C027319B1BF6F0069DCFD /* Support */,
+				500C027419B1BF6F0069DCFD /* Views */,
 				500C023019B169EC0069DCFD /* TNAppDelegate.h */,
 				500C023119B169EC0069DCFD /* TNAppDelegate.m */,
-				500C023319B169EC0069DCFD /* Images.xcassets */,
-				500C022819B169EC0069DCFD /* Supporting Files */,
+				500C022F19B169EC0069DCFD /* TravelNow-Prefix.pch */,
+				500C028019B1C04A0069DCFD /* main.m */,
+				500C028319B1C0640069DCFD /* TNMacros.h */,
 			);
 			path = TravelNow;
-			sourceTree = "<group>";
-		};
-		500C022819B169EC0069DCFD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				500C022919B169EC0069DCFD /* TravelNow-Info.plist */,
-				500C022A19B169EC0069DCFD /* InfoPlist.strings */,
-				500C022D19B169EC0069DCFD /* main.m */,
-				500C022F19B169EC0069DCFD /* TravelNow-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		500C024019B169ED0069DCFD /* TravelNowTests */ = {
 			isa = PBXGroup;
 			children = (
 				500C024619B169ED0069DCFD /* TravelNowTests.m */,
-				500C024119B169ED0069DCFD /* Supporting Files */,
 			);
 			path = TravelNowTests;
 			sourceTree = "<group>";
 		};
-		500C024119B169ED0069DCFD /* Supporting Files */ = {
+		500C025019B1BEBB0069DCFD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				500C024219B169ED0069DCFD /* TravelNowTests-Info.plist */,
-				500C024319B169ED0069DCFD /* InfoPlist.strings */,
+				500C026819B1BF3A0069DCFD /* CoreData */,
+				500C026419B1BF230069DCFD /* Storyboards */,
+				500C025419B1BEC40069DCFD /* TravelNow */,
+				500C025C19B1BECA0069DCFD /* TravelNowTests */,
+				500C025119B1BEBB0069DCFD /* Images.xcassets */,
 			);
-			name = "Supporting Files";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		500C025419B1BEC40069DCFD /* TravelNow */ = {
+			isa = PBXGroup;
+			children = (
+				500C025519B1BEC40069DCFD /* Plists */,
+				500C025719B1BEC40069DCFD /* Strings */,
+			);
+			name = TravelNow;
+			path = TravelNow/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		500C025519B1BEC40069DCFD /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				500C025619B1BEC40069DCFD /* TravelNow-Info.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		500C025719B1BEC40069DCFD /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				500C025819B1BEC40069DCFD /* InfoPlist.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		500C025C19B1BECA0069DCFD /* TravelNowTests */ = {
+			isa = PBXGroup;
+			children = (
+				500C025D19B1BECA0069DCFD /* Plists */,
+				500C025F19B1BECA0069DCFD /* Strings */,
+			);
+			name = TravelNowTests;
+			path = TravelNowTests/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		500C025D19B1BECA0069DCFD /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				500C025E19B1BECA0069DCFD /* TravelNowTests-Info.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		500C025F19B1BECA0069DCFD /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				500C026019B1BECA0069DCFD /* InfoPlist.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		500C026419B1BF230069DCFD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				500C026519B1BF300069DCFD /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		500C026819B1BF3A0069DCFD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				500C026D19B1BF4E0069DCFD /* Main.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		500C027119B1BF6F0069DCFD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				500C027519B1BFA80069DCFD /* TNLoginViewController.h */,
+				500C027619B1BFA90069DCFD /* TNLoginViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		500C027219B1BF6F0069DCFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				500C027919B1BFCE0069DCFD /* CoreData */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		500C027319B1BF6F0069DCFD /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		500C027419B1BF6F0069DCFD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		500C027919B1BFCE0069DCFD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		500C027A19B1C0050069DCFD /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				500C027B19B1C0050069DCFD /* CocoaLumberjack */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		500C027B19B1C0050069DCFD /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				500C027C19B1C0050069DCFD /* MHLog.h */,
+				500C027D19B1C0050069DCFD /* MHLog.m */,
+			);
+			path = CocoaLumberjack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +295,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 500C024A19B169ED0069DCFD /* Build configuration list for PBXNativeTarget "TravelNow" */;
 			buildPhases = (
+				9BCD52AFF3724A749EE1836E /* Check Pods Manifest.lock */,
 				500C021A19B169EC0069DCFD /* Sources */,
 				500C021B19B169EC0069DCFD /* Frameworks */,
 				500C021C19B169EC0069DCFD /* Resources */,
+				54E6FAE46C944D2E91714D64 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +338,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Maksym Huk";
 				TargetAttributes = {
+					500C021D19B169EC0069DCFD = {
+						DevelopmentTeam = 3D9JCD8WT9;
+					};
 					500C023819B169ED0069DCFD = {
 						TestTargetID = 500C021D19B169EC0069DCFD;
 					};
@@ -220,8 +369,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				500C022C19B169EC0069DCFD /* InfoPlist.strings in Resources */,
-				500C023419B169EC0069DCFD /* Images.xcassets in Resources */,
+				500C026619B1BF300069DCFD /* Main.storyboard in Resources */,
+				500C025219B1BEBB0069DCFD /* Images.xcassets in Resources */,
+				500C025B19B1BEC40069DCFD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,19 +379,57 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				500C024519B169ED0069DCFD /* InfoPlist.strings in Resources */,
+				500C026719B1BF300069DCFD /* Main.storyboard in Resources */,
+				500C025319B1BEBB0069DCFD /* Images.xcassets in Resources */,
+				500C026319B1BECA0069DCFD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54E6FAE46C944D2E91714D64 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BCD52AFF3724A749EE1836E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		500C021A19B169EC0069DCFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				500C027719B1BFA90069DCFD /* TNLoginViewController.m in Sources */,
+				500C027E19B1C0050069DCFD /* MHLog.m in Sources */,
+				500C026F19B1BF4E0069DCFD /* Main.xcdatamodeld in Sources */,
 				500C023219B169EC0069DCFD /* TNAppDelegate.m in Sources */,
-				500C022E19B169EC0069DCFD /* main.m in Sources */,
+				500C028119B1C04A0069DCFD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +437,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				500C028219B1C04A0069DCFD /* main.m in Sources */,
+				500C027019B1BF4E0069DCFD /* Main.xcdatamodeld in Sources */,
+				500C027F19B1C0050069DCFD /* MHLog.m in Sources */,
+				500C027819B1BFA90069DCFD /* TNLoginViewController.m in Sources */,
 				500C024719B169ED0069DCFD /* TravelNowTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,18 +456,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		500C022A19B169EC0069DCFD /* InfoPlist.strings */ = {
+		500C025819B1BEC40069DCFD /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				500C022B19B169EC0069DCFD /* en */,
+				500C025919B1BEC40069DCFD /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		500C024319B169ED0069DCFD /* InfoPlist.strings */ = {
+		500C026019B1BECA0069DCFD /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				500C024419B169ED0069DCFD /* en */,
+				500C026119B1BECA0069DCFD /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -355,12 +547,14 @@
 		};
 		500C024B19B169ED0069DCFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9214DB765D743038C5ADFAB /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravelNow/TravelNow-Prefix.pch";
-				INFOPLIST_FILE = "TravelNow/TravelNow-Info.plist";
+				INFOPLIST_FILE = "TravelNow/Resources/Plists/TravelNow-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -368,12 +562,14 @@
 		};
 		500C024C19B169ED0069DCFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9214DB765D743038C5ADFAB /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravelNow/TravelNow-Prefix.pch";
-				INFOPLIST_FILE = "TravelNow/TravelNow-Info.plist";
+				INFOPLIST_FILE = "TravelNow/Resources/Plists/TravelNow-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,7 +590,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "TravelNowTests/TravelNowTests-Info.plist";
+				INFOPLIST_FILE = "TravelNowTests/Resources/Plists/TravelNowTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -412,7 +608,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravelNow/TravelNow-Prefix.pch";
-				INFOPLIST_FILE = "TravelNowTests/TravelNowTests-Info.plist";
+				INFOPLIST_FILE = "TravelNowTests/Resources/Plists/TravelNowTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -438,6 +634,7 @@
 				500C024C19B169ED0069DCFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		500C024D19B169ED0069DCFD /* Build configuration list for PBXNativeTarget "TravelNowTests" */ = {
 			isa = XCConfigurationList;
@@ -446,8 +643,22 @@
 				500C024F19B169ED0069DCFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		500C026D19B1BF4E0069DCFD /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				500C026E19B1BF4E0069DCFD /* Main.xcdatamodel */,
+			);
+			currentVersion = 500C026E19B1BF4E0069DCFD /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 500C021619B169EC0069DCFD /* Project object */;
 }
