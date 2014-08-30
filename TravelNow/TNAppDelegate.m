@@ -11,6 +11,7 @@
 @implementation TNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+	[MHLog setup];
 	DDLogInfo(@"Launched!");	
     return YES;
 }

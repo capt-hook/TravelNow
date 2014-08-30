@@ -1,5 +1,5 @@
 //
-//  TNLoginViewController.h
+//  TNWelcomeViewController.h
 //  TravelNow
 //
 //  Created by Maksym Huk on 8/30/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TNLoginViewController : UIViewController
+@interface TNWelcomeViewController : UIViewController
 
 @end
