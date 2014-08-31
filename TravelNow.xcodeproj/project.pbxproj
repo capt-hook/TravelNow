@@ -30,6 +30,10 @@
 		50C273ED19B1D43900C47EFA /* TNLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C273EC19B1D43900C47EFA /* TNLogInViewController.m */; };
 		50C273F019B1D44000C47EFA /* TNWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C273EF19B1D44000C47EFA /* TNWelcomeViewController.m */; };
 		50C273F319B1D44900C47EFA /* TNSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C273F219B1D44900C47EFA /* TNSignUpViewController.m */; };
+		50C2740219B243E900C47EFA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C2740119B243E900C47EFA /* User.m */; };
+		50C2740819B2EDDD00C47EFA /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C2740719B2EDDD00C47EFA /* Trip.m */; };
+		50C2740B19B2EE7400C47EFA /* TNStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C2740A19B2EE7400C47EFA /* TNStore.m */; };
+		50C2740E19B2EE9E00C47EFA /* TNMappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C2740D19B2EE9E00C47EFA /* TNMappingProvider.m */; };
 		992ABDFF4EFD47F8B45C9D7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7230D91EAC2648BEA27CC0B0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +75,14 @@
 		50C273EF19B1D44000C47EFA /* TNWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNWelcomeViewController.m; sourceTree = "<group>"; };
 		50C273F119B1D44900C47EFA /* TNSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSignUpViewController.h; sourceTree = "<group>"; };
 		50C273F219B1D44900C47EFA /* TNSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSignUpViewController.m; sourceTree = "<group>"; };
+		50C2740019B243E900C47EFA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		50C2740119B243E900C47EFA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		50C2740619B2EDDD00C47EFA /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
+		50C2740719B2EDDD00C47EFA /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
+		50C2740919B2EE7400C47EFA /* TNStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNStore.h; sourceTree = "<group>"; };
+		50C2740A19B2EE7400C47EFA /* TNStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNStore.m; sourceTree = "<group>"; };
+		50C2740C19B2EE9E00C47EFA /* TNMappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNMappingProvider.h; sourceTree = "<group>"; };
+		50C2740D19B2EE9E00C47EFA /* TNMappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNMappingProvider.m; sourceTree = "<group>"; };
 		7230D91EAC2648BEA27CC0B0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9214DB765D743038C5ADFAB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -255,6 +267,10 @@
 			isa = PBXGroup;
 			children = (
 				500C027919B1BFCE0069DCFD /* CoreData */,
+				50C2740919B2EE7400C47EFA /* TNStore.h */,
+				50C2740A19B2EE7400C47EFA /* TNStore.m */,
+				50C2740C19B2EE9E00C47EFA /* TNMappingProvider.h */,
+				50C2740D19B2EE9E00C47EFA /* TNMappingProvider.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,6 +292,10 @@
 		500C027919B1BFCE0069DCFD /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				50C2740019B243E900C47EFA /* User.h */,
+				50C2740119B243E900C47EFA /* User.m */,
+				50C2740619B2EDDD00C47EFA /* Trip.h */,
+				50C2740719B2EDDD00C47EFA /* Trip.m */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -435,12 +455,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				500C027E19B1C0050069DCFD /* MHLog.m in Sources */,
+				50C2740B19B2EE7400C47EFA /* TNStore.m in Sources */,
 				500C026F19B1BF4E0069DCFD /* Main.xcdatamodeld in Sources */,
+				50C2740219B243E900C47EFA /* User.m in Sources */,
 				50C273F319B1D44900C47EFA /* TNSignUpViewController.m in Sources */,
 				500C023219B169EC0069DCFD /* TNAppDelegate.m in Sources */,
+				50C2740E19B2EE9E00C47EFA /* TNMappingProvider.m in Sources */,
 				50C273ED19B1D43900C47EFA /* TNLogInViewController.m in Sources */,
 				500C028119B1C04A0069DCFD /* main.m in Sources */,
 				50C273F019B1D44000C47EFA /* TNWelcomeViewController.m in Sources */,
+				50C2740819B2EDDD00C47EFA /* Trip.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

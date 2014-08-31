@@ -7,13 +7,20 @@
 //
 
 #import "TNAppDelegate.h"
+#import "TNStore.h"
 
 @implementation TNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	[MHLog setup];
-	DDLogInfo(@"Launched!");	
+	DDLogInfo(@"Launched!");
+	[self setupStore];
+	DDLogInfo(@"Store setup complete");
     return YES;
+}
+
+- (void)setupStore {
+	[[TNStore sharedStore] setup];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
