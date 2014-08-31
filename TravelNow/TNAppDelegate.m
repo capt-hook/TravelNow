@@ -7,20 +7,25 @@
 //
 
 #import "TNAppDelegate.h"
-#import "TNStore.h"
+
+#import <MagicalRecord+Setup.h>
+#import <MagicalRecord+Options.h>
 
 @implementation TNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	[MHLog setup];
 	DDLogInfo(@"Launched!");
-	[self setupStore];
+	[self setupCoreData];
 	DDLogInfo(@"Store setup complete");
     return YES;
 }
 
-- (void)setupStore {
-	[[TNStore sharedStore] setup];
+- (void)setupCoreData {
+	if (QA) {
+		[MagicalRecord setShouldDeleteStoreOnModelMismatch:YES];
+	}
+	[MagicalRecord setupAutoMigratingCoreDataStack];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

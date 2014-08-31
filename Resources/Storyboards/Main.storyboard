@@ -86,10 +86,42 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bo4-B7-htf"/>
+                    <connections>
+                        <segue destination="kpX-8c-Ghc" kind="push" identifier="Trips" id="pgf-SZ-YTo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Fk-ua-6Ob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="327" y="-84"/>
+        </scene>
+        <!--Trips View Controller-->
+        <scene sceneID="bCq-SK-LjQ">
+            <objects>
+                <tableViewController id="kpX-8c-Ghc" customClass="TNTripsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="14f-3q-5A1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Trip" id="0BB-6I-a5E">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0BB-6I-a5E" id="0sn-FL-sI0">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kpX-8c-Ghc" id="wBj-Vn-56F"/>
+                            <outlet property="delegate" destination="kpX-8c-Ghc" id="4dV-WZ-JU1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="dRb-Sg-kYL"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rk4-GH-wfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1637" y="-84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kLF-w8-wUJ">

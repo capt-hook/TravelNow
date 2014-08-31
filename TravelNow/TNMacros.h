@@ -14,3 +14,5 @@
 
 #define MHSystemVersionGreaterThanOrEqualTo(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 #define MHIOS7() MHSystemVersionGreaterThanOrEqualTo(@"7.0")
+
+#define BaseURL @"https://blazing-heat-8600.firebaseio.com"

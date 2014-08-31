@@ -7,8 +7,12 @@
 //
 
 #import "TNSignUpViewController.h"
+#import "TNAPIClient.h"
+#import "NSString+Password.h"
 
 @interface TNSignUpViewController () <UITextFieldDelegate>
+
+@property (nonatomic, strong) JGProgressHUD *progressHUD;
 
 @property (nonatomic, weak) IBOutlet UITextField *emailField;
 @property (nonatomic, weak) IBOutlet UITextField *passwordField;
@@ -28,9 +32,23 @@
 }
 
 - (void)signUp {
-	if (self.doneBlock) {
-		self.doneBlock(self);
-	}
+	NSString *email = self.emailField.text;
+	NSString *password = [self.passwordField.text bakedPassword];
+	
+	self.progressHUD = [JGProgressHUD progressHUDWithText:LS(@"Signing you up") detailText:LS(@"Just a sec..")];
+	[self.progressHUD showInView:self.view.window];
+	
+	[[TNAPIClient sharedAPIClient] signUpWithEmail:email password:password completionBlock:^(NSError *error) {
+		if (error) {
+			[self.progressHUD dismissAsError];
+			[UIAlertView showAlert:LS(@"Sorry") withMessage:error.localizedDescription];
+		} else {
+			[self.progressHUD dismissAsSuccess];
+			if (self.doneBlock) {
+				self.doneBlock(self);
+			}
+		}
+	}];
 }
 
 #pragma mark - UITextField

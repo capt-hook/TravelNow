@@ -21,3 +21,6 @@
 #import <EXTScope.h>
 
 #import <UIAlertView+Blocks.h>
+#import "UIAlertView+Presets.h"
+
+#import "JGProgressHUD+Presets.h"

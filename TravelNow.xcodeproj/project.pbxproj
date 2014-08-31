@@ -27,13 +27,31 @@
 		500C027F19B1C0050069DCFD /* MHLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C027D19B1C0050069DCFD /* MHLog.m */; };
 		500C028119B1C04A0069DCFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C028019B1C04A0069DCFD /* main.m */; };
 		500C028219B1C04A0069DCFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C028019B1C04A0069DCFD /* main.m */; };
+		504DB7D019B31313005D2993 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7CE19B31313005D2993 /* Firebase.framework */; };
+		504DB7D119B31313005D2993 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7CE19B31313005D2993 /* Firebase.framework */; };
+		504DB7D219B31313005D2993 /* FirebaseSimpleLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7CF19B31313005D2993 /* FirebaseSimpleLogin.framework */; };
+		504DB7D319B31313005D2993 /* FirebaseSimpleLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7CF19B31313005D2993 /* FirebaseSimpleLogin.framework */; };
+		504DB7DA19B31489005D2993 /* NSString+Password.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7D919B31489005D2993 /* NSString+Password.m */; };
+		504DB7DB19B31489005D2993 /* NSString+Password.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7D919B31489005D2993 /* NSString+Password.m */; };
+		504DB7DD19B3153F005D2993 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7DC19B3153F005D2993 /* libicucore.dylib */; };
+		504DB7DF19B31546005D2993 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7DE19B31546005D2993 /* libc++.dylib */; };
+		504DB7E119B3154F005D2993 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7E019B3154F005D2993 /* CFNetwork.framework */; };
+		504DB7E319B31557005D2993 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7E219B31557005D2993 /* Security.framework */; };
+		504DB7E519B3155D005D2993 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7E419B3155D005D2993 /* SystemConfiguration.framework */; };
+		504DB7E719B3156D005D2993 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7E619B3156D005D2993 /* Social.framework */; };
+		504DB7EB19B317DE005D2993 /* TNAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7EA19B317DE005D2993 /* TNAPIClient.m */; };
+		504DB7EC19B317DE005D2993 /* TNAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7EA19B317DE005D2993 /* TNAPIClient.m */; };
+		504DB7EF19B31AAF005D2993 /* TNTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7EE19B31AAF005D2993 /* TNTrip.m */; };
+		504DB7F019B31AAF005D2993 /* TNTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7EE19B31AAF005D2993 /* TNTrip.m */; };
+		504DB7F819B31D1C005D2993 /* UIAlertView+Presets.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7F719B31D1C005D2993 /* UIAlertView+Presets.m */; };
+		504DB7F919B31D1C005D2993 /* UIAlertView+Presets.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7F719B31D1C005D2993 /* UIAlertView+Presets.m */; };
+		504DB7FD19B3224C005D2993 /* JGProgressHUD+Presets.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7FC19B3224C005D2993 /* JGProgressHUD+Presets.m */; };
+		504DB7FE19B3224C005D2993 /* JGProgressHUD+Presets.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7FC19B3224C005D2993 /* JGProgressHUD+Presets.m */; };
+		5054767419B3AFBD00602858 /* TNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5054767319B3AFBD00602858 /* TNUser.m */; };
+		5054767719B3B3EE00602858 /* TNTripsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5054767619B3B3EE00602858 /* TNTripsViewController.m */; };
 		50C273ED19B1D43900C47EFA /* TNLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C273EC19B1D43900C47EFA /* TNLogInViewController.m */; };
 		50C273F019B1D44000C47EFA /* TNWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C273EF19B1D44000C47EFA /* TNWelcomeViewController.m */; };
 		50C273F319B1D44900C47EFA /* TNSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C273F219B1D44900C47EFA /* TNSignUpViewController.m */; };
-		50C2740219B243E900C47EFA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C2740119B243E900C47EFA /* User.m */; };
-		50C2740819B2EDDD00C47EFA /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C2740719B2EDDD00C47EFA /* Trip.m */; };
-		50C2740B19B2EE7400C47EFA /* TNStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C2740A19B2EE7400C47EFA /* TNStore.m */; };
-		50C2740E19B2EE9E00C47EFA /* TNMappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C2740D19B2EE9E00C47EFA /* TNMappingProvider.m */; };
 		992ABDFF4EFD47F8B45C9D7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7230D91EAC2648BEA27CC0B0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -69,20 +87,34 @@
 		500C027D19B1C0050069DCFD /* MHLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHLog.m; sourceTree = "<group>"; };
 		500C028019B1C04A0069DCFD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		500C028319B1C0640069DCFD /* TNMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNMacros.h; sourceTree = "<group>"; };
+		504DB7CE19B31313005D2993 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Lib/Firebase.framework; sourceTree = SOURCE_ROOT; };
+		504DB7CF19B31313005D2993 /* FirebaseSimpleLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseSimpleLogin.framework; path = Lib/FirebaseSimpleLogin.framework; sourceTree = SOURCE_ROOT; };
+		504DB7D819B31489005D2993 /* NSString+Password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Password.h"; sourceTree = "<group>"; };
+		504DB7D919B31489005D2993 /* NSString+Password.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Password.m"; sourceTree = "<group>"; };
+		504DB7DC19B3153F005D2993 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		504DB7DE19B31546005D2993 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		504DB7E019B3154F005D2993 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		504DB7E219B31557005D2993 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		504DB7E419B3155D005D2993 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		504DB7E619B3156D005D2993 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		504DB7E919B317DE005D2993 /* TNAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNAPIClient.h; sourceTree = "<group>"; };
+		504DB7EA19B317DE005D2993 /* TNAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNAPIClient.m; sourceTree = "<group>"; };
+		504DB7ED19B31AAF005D2993 /* TNTrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTrip.h; sourceTree = "<group>"; };
+		504DB7EE19B31AAF005D2993 /* TNTrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTrip.m; sourceTree = "<group>"; };
+		504DB7F619B31D1C005D2993 /* UIAlertView+Presets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Presets.h"; sourceTree = "<group>"; };
+		504DB7F719B31D1C005D2993 /* UIAlertView+Presets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Presets.m"; sourceTree = "<group>"; };
+		504DB7FB19B3224C005D2993 /* JGProgressHUD+Presets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JGProgressHUD+Presets.h"; sourceTree = "<group>"; };
+		504DB7FC19B3224C005D2993 /* JGProgressHUD+Presets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JGProgressHUD+Presets.m"; sourceTree = "<group>"; };
+		5054767219B3AFBD00602858 /* TNUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNUser.h; sourceTree = "<group>"; };
+		5054767319B3AFBD00602858 /* TNUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNUser.m; sourceTree = "<group>"; };
+		5054767519B3B3EE00602858 /* TNTripsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTripsViewController.h; sourceTree = "<group>"; };
+		5054767619B3B3EE00602858 /* TNTripsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTripsViewController.m; sourceTree = "<group>"; };
 		50C273EB19B1D43900C47EFA /* TNLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNLogInViewController.h; sourceTree = "<group>"; };
 		50C273EC19B1D43900C47EFA /* TNLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNLogInViewController.m; sourceTree = "<group>"; };
 		50C273EE19B1D44000C47EFA /* TNWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNWelcomeViewController.h; sourceTree = "<group>"; };
 		50C273EF19B1D44000C47EFA /* TNWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNWelcomeViewController.m; sourceTree = "<group>"; };
 		50C273F119B1D44900C47EFA /* TNSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSignUpViewController.h; sourceTree = "<group>"; };
 		50C273F219B1D44900C47EFA /* TNSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSignUpViewController.m; sourceTree = "<group>"; };
-		50C2740019B243E900C47EFA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		50C2740119B243E900C47EFA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		50C2740619B2EDDD00C47EFA /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
-		50C2740719B2EDDD00C47EFA /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
-		50C2740919B2EE7400C47EFA /* TNStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNStore.h; sourceTree = "<group>"; };
-		50C2740A19B2EE7400C47EFA /* TNStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNStore.m; sourceTree = "<group>"; };
-		50C2740C19B2EE9E00C47EFA /* TNMappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNMappingProvider.h; sourceTree = "<group>"; };
-		50C2740D19B2EE9E00C47EFA /* TNMappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNMappingProvider.m; sourceTree = "<group>"; };
 		7230D91EAC2648BEA27CC0B0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9214DB765D743038C5ADFAB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +124,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504DB7E719B3156D005D2993 /* Social.framework in Frameworks */,
+				504DB7E519B3155D005D2993 /* SystemConfiguration.framework in Frameworks */,
+				504DB7E319B31557005D2993 /* Security.framework in Frameworks */,
+				504DB7E119B3154F005D2993 /* CFNetwork.framework in Frameworks */,
+				504DB7DF19B31546005D2993 /* libc++.dylib in Frameworks */,
+				504DB7DD19B3153F005D2993 /* libicucore.dylib in Frameworks */,
+				504DB7D019B31313005D2993 /* Firebase.framework in Frameworks */,
+				504DB7D219B31313005D2993 /* FirebaseSimpleLogin.framework in Frameworks */,
 				500C022419B169EC0069DCFD /* CoreGraphics.framework in Frameworks */,
 				500C022619B169EC0069DCFD /* UIKit.framework in Frameworks */,
 				500C022219B169EC0069DCFD /* Foundation.framework in Frameworks */,
@@ -106,6 +146,8 @@
 				500C023B19B169ED0069DCFD /* XCTest.framework in Frameworks */,
 				500C023D19B169ED0069DCFD /* UIKit.framework in Frameworks */,
 				500C023C19B169ED0069DCFD /* Foundation.framework in Frameworks */,
+				504DB7D119B31313005D2993 /* Firebase.framework in Frameworks */,
+				504DB7D319B31313005D2993 /* FirebaseSimpleLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +179,12 @@
 		500C022019B169EC0069DCFD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				504DB7E619B3156D005D2993 /* Social.framework */,
+				504DB7E419B3155D005D2993 /* SystemConfiguration.framework */,
+				504DB7E219B31557005D2993 /* Security.framework */,
+				504DB7E019B3154F005D2993 /* CFNetwork.framework */,
+				504DB7DE19B31546005D2993 /* libc++.dylib */,
+				504DB7DC19B3153F005D2993 /* libicucore.dylib */,
 				500C022119B169EC0069DCFD /* Foundation.framework */,
 				500C022319B169EC0069DCFD /* CoreGraphics.framework */,
 				500C022519B169EC0069DCFD /* UIKit.framework */,
@@ -165,6 +213,8 @@
 		500C024019B169ED0069DCFD /* TravelNowTests */ = {
 			isa = PBXGroup;
 			children = (
+				504DB7CE19B31313005D2993 /* Firebase.framework */,
+				504DB7CF19B31313005D2993 /* FirebaseSimpleLogin.framework */,
 				500C024619B169ED0069DCFD /* TravelNowTests.m */,
 			);
 			path = TravelNowTests;
@@ -259,6 +309,8 @@
 				50C273EC19B1D43900C47EFA /* TNLogInViewController.m */,
 				50C273F119B1D44900C47EFA /* TNSignUpViewController.h */,
 				50C273F219B1D44900C47EFA /* TNSignUpViewController.m */,
+				5054767519B3B3EE00602858 /* TNTripsViewController.h */,
+				5054767619B3B3EE00602858 /* TNTripsViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -267,10 +319,8 @@
 			isa = PBXGroup;
 			children = (
 				500C027919B1BFCE0069DCFD /* CoreData */,
-				50C2740919B2EE7400C47EFA /* TNStore.h */,
-				50C2740A19B2EE7400C47EFA /* TNStore.m */,
-				50C2740C19B2EE9E00C47EFA /* TNMappingProvider.h */,
-				50C2740D19B2EE9E00C47EFA /* TNMappingProvider.m */,
+				504DB7E919B317DE005D2993 /* TNAPIClient.h */,
+				504DB7EA19B317DE005D2993 /* TNAPIClient.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +328,9 @@
 		500C027319B1BF6F0069DCFD /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				504DB7FA19B3223F005D2993 /* JGProgressHUD */,
+				504DB7F519B31D1C005D2993 /* UIAlertView */,
+				504DB7D719B31489005D2993 /* NSString */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -292,10 +345,10 @@
 		500C027919B1BFCE0069DCFD /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				50C2740019B243E900C47EFA /* User.h */,
-				50C2740119B243E900C47EFA /* User.m */,
-				50C2740619B2EDDD00C47EFA /* Trip.h */,
-				50C2740719B2EDDD00C47EFA /* Trip.m */,
+				504DB7ED19B31AAF005D2993 /* TNTrip.h */,
+				504DB7EE19B31AAF005D2993 /* TNTrip.m */,
+				5054767219B3AFBD00602858 /* TNUser.h */,
+				5054767319B3AFBD00602858 /* TNUser.m */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -315,6 +368,33 @@
 				500C027D19B1C0050069DCFD /* MHLog.m */,
 			);
 			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		504DB7D719B31489005D2993 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				504DB7D819B31489005D2993 /* NSString+Password.h */,
+				504DB7D919B31489005D2993 /* NSString+Password.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		504DB7F519B31D1C005D2993 /* UIAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				504DB7F619B31D1C005D2993 /* UIAlertView+Presets.h */,
+				504DB7F719B31D1C005D2993 /* UIAlertView+Presets.m */,
+			);
+			path = UIAlertView;
+			sourceTree = "<group>";
+		};
+		504DB7FA19B3223F005D2993 /* JGProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				504DB7FB19B3224C005D2993 /* JGProgressHUD+Presets.h */,
+				504DB7FC19B3224C005D2993 /* JGProgressHUD+Presets.m */,
+			);
+			path = JGProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,17 +534,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504DB7DA19B31489005D2993 /* NSString+Password.m in Sources */,
 				500C027E19B1C0050069DCFD /* MHLog.m in Sources */,
-				50C2740B19B2EE7400C47EFA /* TNStore.m in Sources */,
 				500C026F19B1BF4E0069DCFD /* Main.xcdatamodeld in Sources */,
-				50C2740219B243E900C47EFA /* User.m in Sources */,
+				504DB7F819B31D1C005D2993 /* UIAlertView+Presets.m in Sources */,
+				504DB7EF19B31AAF005D2993 /* TNTrip.m in Sources */,
+				5054767419B3AFBD00602858 /* TNUser.m in Sources */,
 				50C273F319B1D44900C47EFA /* TNSignUpViewController.m in Sources */,
 				500C023219B169EC0069DCFD /* TNAppDelegate.m in Sources */,
-				50C2740E19B2EE9E00C47EFA /* TNMappingProvider.m in Sources */,
+				504DB7EB19B317DE005D2993 /* TNAPIClient.m in Sources */,
+				5054767719B3B3EE00602858 /* TNTripsViewController.m in Sources */,
 				50C273ED19B1D43900C47EFA /* TNLogInViewController.m in Sources */,
+				504DB7FD19B3224C005D2993 /* JGProgressHUD+Presets.m in Sources */,
 				500C028119B1C04A0069DCFD /* main.m in Sources */,
 				50C273F019B1D44000C47EFA /* TNWelcomeViewController.m in Sources */,
-				50C2740819B2EDDD00C47EFA /* Trip.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,8 +555,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504DB7F919B31D1C005D2993 /* UIAlertView+Presets.m in Sources */,
 				500C028219B1C04A0069DCFD /* main.m in Sources */,
+				504DB7FE19B3224C005D2993 /* JGProgressHUD+Presets.m in Sources */,
+				504DB7F019B31AAF005D2993 /* TNTrip.m in Sources */,
+				504DB7EC19B317DE005D2993 /* TNAPIClient.m in Sources */,
 				500C027019B1BF4E0069DCFD /* Main.xcdatamodeld in Sources */,
+				504DB7DB19B31489005D2993 /* NSString+Password.m in Sources */,
 				500C027F19B1C0050069DCFD /* MHLog.m in Sources */,
 				500C024719B169ED0069DCFD /* TravelNowTests.m in Sources */,
 			);
@@ -533,6 +621,8 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					"QA=1",
+					"MR_ENABLE_ACTIVE_RECORD_LOGGING=0",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -567,6 +657,10 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"QA=0",
+					"MR_ENABLE_ACTIVE_RECORD_LOGGING=0",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -586,6 +680,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lib",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravelNow/TravelNow-Prefix.pch";
 				INFOPLIST_FILE = "TravelNow/Resources/Plists/TravelNow-Info.plist";
@@ -601,6 +699,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lib",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravelNow/TravelNow-Prefix.pch";
 				INFOPLIST_FILE = "TravelNow/Resources/Plists/TravelNow-Info.plist";
@@ -617,6 +719,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Lib",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravelNow/TravelNow-Prefix.pch";
@@ -639,6 +742,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Lib",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravelNow/TravelNow-Prefix.pch";
