@@ -30,6 +30,7 @@
 @property (nonatomic, strong) NSFetchedResultsController *tripsController;
 
 @property (nonatomic) NSManagedObjectContext *tempContext;
+@property (nonatomic) BOOL shouldRefreshOnAppear;
 
 @end
 
@@ -45,12 +46,23 @@
 	[self setupTrips];
 	
 	[self configurePullToRefresh];
+	
+	self.shouldRefreshOnAppear = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 	
 	[self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
+	
+	if (self.shouldRefreshOnAppear) {
+		self.shouldRefreshOnAppear = NO;
+		[self refresh];
+	}
 }
 
 - (void)configureNavigationItem {
@@ -351,6 +363,24 @@
 	[self addTrip];
 }
 
+- (void)refresh {
+	[self setupTempContext];
+	
+	JGProgressHUD *progressHUD = [JGProgressHUD progressHUDWithText:LS(@"Fetching trips") detailText:LS(@"Just a sec..")];
+	[progressHUD showInView:self.view.window];
+	
+	[[TNAPIClient sharedAPIClient] fetchTripsWithCompletion:^(NSError *error) {
+		if (error) {
+			[progressHUD dismissAsError];
+			[UIAlertView showAlert:LS(@"Sorry!") withMessage:error.localizedDescription];
+		} else {
+			[self.tempContext MR_saveToPersistentStoreAndWait];
+			[progressHUD dismissAsSuccess];
+		}
+		self.tempContext = nil;
+	} inContext:self.tempContext];
+}
+
 - (void)pulledToRefresh {
 	[self setupTempContext];
 	self.view.window.userInteractionEnabled = NO;
@@ -380,7 +410,7 @@
 		} else if ([indexPath isEqual:[NSIndexPath indexPathForRow:1 inSection:0]]) { // print
 			[self printTravelPlan];
 		} else if ([indexPath isEqual:[NSIndexPath indexPathForRow:2 inSection:0]]) { // log out
-			
+			[self.navigationController popToViewController:self.navigationController.childViewControllers[0] animated:YES];
 		}
 		[sheet dismissAnimated:YES];
 	}];

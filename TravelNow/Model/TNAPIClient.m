@@ -138,7 +138,7 @@ static TNAPIClient *_sharedAPIClient = nil;
 - (void)addTrip:(TNTrip *)trip completion:(void (^)(NSError *error))completion {
 	NSString *path = [NSString stringWithFormat:@"users/%@/trips.json", self.user.userID];
 	NSDateFormatter *dateFormatter = [self dateFormatter];
-	[self POST:[self pathWithAuth:path] parameters:@{ @"destination" : trip.destination, @"startDate" : [dateFormatter stringFromDate:trip.startDate], @"endDate" : [dateFormatter stringFromDate:trip.endDate], @"note" : trip.note } success:^(NSURLSessionDataTask *task, id responseObject) {
+	[self POST:[self pathWithAuth:path] parameters:@{ @"destination" : trip.destination, @"startDate" : (trip.startDate ? [dateFormatter stringFromDate:trip.startDate] : @""), @"endDate" : (trip.endDate ? [dateFormatter stringFromDate:trip.endDate] : @""), @"note" : trip.note ? trip.note : @"" } success:^(NSURLSessionDataTask *task, id responseObject) {
 		DDLogInfo(@"POST trip success with response: %@", responseObject);
 		NSString *tripID = [responseObject objectForKey:@"name"];
 		trip.tripID = tripID;
@@ -170,9 +170,9 @@ static TNAPIClient *_sharedAPIClient = nil;
 }
 
 - (void)updateTrip:(TNTrip *)trip completion:(void (^)(NSError *error))completion {
-	NSString *path = [NSString stringWithFormat:@"users/%@/trips.json", self.user.userID];
+	NSString *path = [NSString stringWithFormat:@"users/%@/trips/%@.json", self.user.userID, trip.tripID];
 	NSDateFormatter *dateFormatter = [self dateFormatter];
-	[self PUT:[self pathWithAuth:path] parameters:@{ trip.tripID : @{ @"destination" : trip.destination, @"startDate" : (trip.startDate ? [dateFormatter stringFromDate:trip.startDate] : @""), @"endDate" : (trip.endDate ? [dateFormatter stringFromDate:trip.endDate] : @""), @"note" : trip.note ? trip.note : @"" } } success:^(NSURLSessionDataTask *task, id responseObject) {
+	[self PUT:[self pathWithAuth:path] parameters:@{ @"destination" : trip.destination, @"startDate" : (trip.startDate ? [dateFormatter stringFromDate:trip.startDate] : @""), @"endDate" : (trip.endDate ? [dateFormatter stringFromDate:trip.endDate] : @""), @"note" : trip.note ? trip.note : @"" } success:^(NSURLSessionDataTask *task, id responseObject) {
 		DDLogInfo(@"POST trip success with response: %@", responseObject);
 		if (completion) {
 			completion(nil);

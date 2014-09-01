@@ -16,14 +16,10 @@
 
 @implementation TNWelcomeViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
 	
-	[self configureNavigationItem];
-}
-
-- (void)configureNavigationItem {
-	[self.navigationController setNavigationBarHidden:YES];
+	[self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
