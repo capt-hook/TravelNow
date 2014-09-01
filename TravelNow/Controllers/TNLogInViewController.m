@@ -13,8 +13,6 @@
 
 @interface TNLogInViewController () <UITextFieldDelegate>
 
-@property (nonatomic, strong) JGProgressHUD *progressHUD;
-
 @property (nonatomic, weak) IBOutlet UITextField *emailField;
 @property (nonatomic, weak) IBOutlet UITextField *passwordField;
 
@@ -25,25 +23,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	[self configureFormFields];
-}
-
-- (void)configureFormFields {
+	if (QA) {
+		self.emailField.text = QAEmail;
+		self.passwordField.text = QAPassword;
+	}
 }
 
 - (void)logIn {
 	NSString *email = self.emailField.text;
 	NSString *password = [self.passwordField.text bakedPassword];
 	
-	self.progressHUD = [JGProgressHUD progressHUDWithText:LS(@"Logging you in") detailText:LS(@"Just a sec..")];
-	[self.progressHUD showInView:self.view.window];
+	JGProgressHUD *progressHUD = [JGProgressHUD progressHUDWithText:LS(@"Logging you in") detailText:LS(@"Just a sec..")];
+	[progressHUD showInView:self.view.window];
 	
 	[[TNAPIClient sharedAPIClient] logInWithEmail:email password:password completion:^(NSError *error) {
 		if (error) {
-			[self.progressHUD dismissAsError];
+			[progressHUD dismissAsError];
 			[UIAlertView showAlert:LS(@"Sorry!") withMessage:error.localizedDescription];
 		} else {
-			[self.progressHUD dismissAsSuccess];
+			[progressHUD dismissAsSuccess];
 			if (self.doneBlock) {
 				self.doneBlock(self);
 			}

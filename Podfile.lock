@@ -30,6 +30,7 @@ PODS:
   - CocoaLumberjack/Core (2.0.0-beta)
   - CocoaLumberjack/Extensions (2.0.0-beta):
     - CocoaLumberjack/Core
+  - JGActionSheet (1.0.3)
   - JGProgressHUD (1.2.1)
   - KVOController (1.0.1)
   - libextobjc/EXTScope (0.4):
@@ -40,6 +41,8 @@ PODS:
   - MagicalRecord/Core (2.2)
   - NSString-Hashes (1.2.2)
   - PureLayout (1.0.1)
+  - RSDayFlow (0.4.0)
+  - SWRevealTableViewCell (0.3.5)
   - TPKeyboardAvoiding (1.2.4)
   - UIAlertView-Blocks (1.0)
 
@@ -47,12 +50,15 @@ DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - ChameleonFramework
   - CocoaLumberjack
+  - JGActionSheet
   - JGProgressHUD
   - KVOController
   - libextobjc/EXTScope
   - MagicalRecord (~> 2.0)
   - NSString-Hashes
   - PureLayout
+  - RSDayFlow
+  - SWRevealTableViewCell
   - TPKeyboardAvoiding
   - UIAlertView-Blocks
 
@@ -60,12 +66,15 @@ SPEC CHECKSUMS:
   AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3
   ChameleonFramework: 9dd83c1e66b4385ed15cb8c18fac12f6a56bbe0d
   CocoaLumberjack: aadc76d7bd6c839ca84b38ed50cbf89d7cf8c693
+  JGActionSheet: d38f47780dd2be8edcaf796e9d945f3e89ba2c9a
   JGProgressHUD: f3c0258684f318bc0009e893fdac0701de5cb75b
   KVOController: e6ad4a058ab0ceed546802361adb89d322a22cf2
   libextobjc: ba42e4111f433273a886cd54f0ddaddb7f62f82f
   MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
   NSString-Hashes: ddf6e856e93d3c83c5d4ef8fcdea2a96ed77c6bc
   PureLayout: 972964b21dbcbc5cc36785aed16aba03176f057d
+  RSDayFlow: 6feaf5b2bd28de898b765808aa52b0a5c0701654
+  SWRevealTableViewCell: 1137e80b742b3c92da00865a3e426f349db17ebc
   TPKeyboardAvoiding: 925e1e1912597d1a4956697eec3bd9656552153c
   UIAlertView-Blocks: f3271e84372beb97aea115cd1fb26ae66457f12f
 

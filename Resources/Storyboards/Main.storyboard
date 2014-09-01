@@ -10,6 +10,7 @@
                 <navigationController definesPresentationContext="YES" id="RZd-d0-KEC" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GKt-mR-dCm">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.9767052531" green="0.60546392199999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="cAR-Gi-9JD" kind="relationship" relationship="rootViewController" id="VtY-PB-feR"/>
@@ -98,18 +99,58 @@
         <scene sceneID="bCq-SK-LjQ">
             <objects>
                 <tableViewController id="kpX-8c-Ghc" customClass="TNTripsViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="14f-3q-5A1">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="14f-3q-5A1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="qN0-sW-G0q">
+                            <rect key="frame" x="0.0" y="166" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Trip" id="0BB-6I-a5E">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Trip" rowHeight="80" id="0BB-6I-a5E" customClass="TNTripCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0BB-6I-a5E" id="0sn-FL-sI0">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paris" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrW-IB-t0n" userLabel="Destination">
+                                            <rect key="frame" x="20" y="28" width="45" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                            <color key="textColor" red="0.15410047769999999" green="0.41306763889999998" blue="0.69063264130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Aug - 12 Sep" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MX-ZS-AII" userLabel="Dates">
+                                            <rect key="frame" x="20" y="50" width="85" height="15"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8A-FR-ULu" userLabel="DaysToStart">
+                                            <rect key="frame" x="273" y="25" width="27" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                            <color key="textColor" red="0.49744248390197754" green="0.64893847703933716" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="a8A-FR-ULu" secondAttribute="trailing" constant="20" id="4Cc-KW-7BO"/>
+                                        <constraint firstAttribute="centerY" secondItem="OrW-IB-t0n" secondAttribute="centerY" id="Dfn-FK-xQT"/>
+                                        <constraint firstItem="9MX-ZS-AII" firstAttribute="leading" secondItem="0sn-FL-sI0" secondAttribute="leading" constant="20" id="R9D-pg-eOS"/>
+                                        <constraint firstAttribute="centerY" secondItem="a8A-FR-ULu" secondAttribute="centerY" id="Tz5-1J-ZCL"/>
+                                        <constraint firstItem="9MX-ZS-AII" firstAttribute="top" secondItem="OrW-IB-t0n" secondAttribute="bottom" constant="-2" id="hnP-o9-r16"/>
+                                        <constraint firstItem="OrW-IB-t0n" firstAttribute="leading" secondItem="0sn-FL-sI0" secondAttribute="leading" constant="20" id="zqv-hh-jsH"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="datesLabel" destination="9MX-ZS-AII" id="1yv-uD-Ign"/>
+                                    <outlet property="daysToStartLabel" destination="a8A-FR-ULu" id="IE9-Dg-b1v"/>
+                                    <outlet property="destinationLabel" destination="OrW-IB-t0n" id="9io-Mi-WbU"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -117,11 +158,196 @@
                             <outlet property="delegate" destination="kpX-8c-Ghc" id="4dV-WZ-JU1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="dRb-Sg-kYL"/>
+                    <navigationItem key="navigationItem" id="dRb-Sg-kYL">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sNA-tJ-a6b">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="kpX-8c-Ghc" id="Wib-Ia-GSC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="xjN-0e-Mkv">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
+                    <connections>
+                        <segue destination="Myx-4E-yo5" kind="push" identifier="Trip" id="t1d-PT-6g5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rk4-GH-wfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1637" y="-84"/>
+        </scene>
+        <!--Trip View Controller-->
+        <scene sceneID="VgV-Ut-fD7">
+            <objects>
+                <tableViewController id="Myx-4E-yo5" customClass="TNTripViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="sbY-cY-mVh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="JPz-Oy-U3a">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="oOX-4Q-lnL">
+                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oOX-4Q-lnL" id="8aR-ub-mYP">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Destination" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aZN-Sc-eOX">
+                                                    <rect key="frame" x="15" y="0.0" width="305" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="Myx-4E-yo5" id="Kwm-49-Xgf"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="aZN-Sc-eOX" secondAttribute="bottom" id="O70-q5-zKc"/>
+                                                <constraint firstItem="aZN-Sc-eOX" firstAttribute="top" secondItem="8aR-ub-mYP" secondAttribute="top" id="QnS-jA-F8M"/>
+                                                <constraint firstAttribute="trailing" secondItem="aZN-Sc-eOX" secondAttribute="trailing" id="sOY-OH-Om7"/>
+                                                <constraint firstItem="aZN-Sc-eOX" firstAttribute="leading" secondItem="8aR-ub-mYP" secondAttribute="leading" constant="15" id="tad-TF-xF2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="mLd-hB-yYA">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="nNM-Ov-ZXO">
+                                        <rect key="frame" x="0.0" y="163" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nNM-Ov-ZXO" id="jtU-G7-TYb">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sx-se-KUX" userLabel="Label">
+                                                    <rect key="frame" x="15" y="13" width="285" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3G0-I1-7GA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="startDateButtonTapped:" destination="Myx-4E-yo5" eventType="touchUpInside" id="TaQ-fS-glh"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="3sx-se-KUX" secondAttribute="centerY" id="6zU-WD-Jr0"/>
+                                                <constraint firstItem="3sx-se-KUX" firstAttribute="leading" secondItem="jtU-G7-TYb" secondAttribute="leading" constant="15" id="H40-w4-Pus"/>
+                                                <constraint firstAttribute="bottom" secondItem="3G0-I1-7GA" secondAttribute="bottom" id="K9c-ef-M2w"/>
+                                                <constraint firstItem="3G0-I1-7GA" firstAttribute="leading" secondItem="jtU-G7-TYb" secondAttribute="leading" id="Ndl-eI-0OI"/>
+                                                <constraint firstItem="3G0-I1-7GA" firstAttribute="top" secondItem="jtU-G7-TYb" secondAttribute="top" id="jvP-o2-WrS"/>
+                                                <constraint firstAttribute="trailing" secondItem="3G0-I1-7GA" secondAttribute="trailing" id="tKo-eR-iVY"/>
+                                                <constraint firstAttribute="trailing" secondItem="3sx-se-KUX" secondAttribute="trailing" constant="20" id="vxb-Ht-NZs"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="7Kb-bA-wVd">
+                                        <rect key="frame" x="0.0" y="207" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Kb-bA-wVd" id="Ypv-zo-P5V">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFs-f2-lCX" userLabel="Label">
+                                                    <rect key="frame" x="15" y="13" width="285" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xs0-GQ-2CJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="endDateButtonTapped:" destination="Myx-4E-yo5" eventType="touchUpInside" id="OhU-XL-6rx"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DFs-f2-lCX" firstAttribute="leading" secondItem="Ypv-zo-P5V" secondAttribute="leading" constant="15" id="2YL-XO-e2E"/>
+                                                <constraint firstAttribute="trailing" secondItem="Xs0-GQ-2CJ" secondAttribute="trailing" id="8FT-QK-Ayt"/>
+                                                <constraint firstAttribute="bottom" secondItem="Xs0-GQ-2CJ" secondAttribute="bottom" id="CGW-jE-Kpp"/>
+                                                <constraint firstAttribute="trailing" secondItem="DFs-f2-lCX" secondAttribute="trailing" constant="20" id="amx-Qr-xNd"/>
+                                                <constraint firstAttribute="centerY" secondItem="DFs-f2-lCX" secondAttribute="centerY" id="hs1-dc-Bbq"/>
+                                                <constraint firstItem="Xs0-GQ-2CJ" firstAttribute="leading" secondItem="Ypv-zo-P5V" secondAttribute="leading" id="kYl-My-MQn"/>
+                                                <constraint firstItem="Xs0-GQ-2CJ" firstAttribute="top" secondItem="Ypv-zo-P5V" secondAttribute="top" id="z3w-Yw-REt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="9iR-Ww-FdS">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="S3g-b9-OG8">
+                                        <rect key="frame" x="0.0" y="271" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S3g-b9-OG8" id="KRz-PC-I1U">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="285" translatesAutoresizingMaskIntoConstraints="NO" id="gAr-SU-XtY" userLabel="Label" customClass="MHLabel">
+                                                    <rect key="frame" x="15" y="0.0" width="285" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkf-7Y-jMA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="noteButtonTapped:" destination="Myx-4E-yo5" eventType="touchUpInside" id="TI3-pC-tWz"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gAr-SU-XtY" firstAttribute="leading" secondItem="KRz-PC-I1U" secondAttribute="leading" constant="15" id="2xx-iM-pD6"/>
+                                                <constraint firstAttribute="trailing" secondItem="gAr-SU-XtY" secondAttribute="trailing" constant="20" id="9MU-R4-3b0"/>
+                                                <constraint firstItem="Wkf-7Y-jMA" firstAttribute="leading" secondItem="KRz-PC-I1U" secondAttribute="leading" id="ELp-3X-HCP"/>
+                                                <constraint firstItem="Wkf-7Y-jMA" firstAttribute="top" secondItem="KRz-PC-I1U" secondAttribute="top" id="EW2-dM-CdX"/>
+                                                <constraint firstAttribute="trailing" secondItem="Wkf-7Y-jMA" secondAttribute="trailing" id="K7i-zV-YwL"/>
+                                                <constraint firstItem="gAr-SU-XtY" firstAttribute="top" secondItem="KRz-PC-I1U" secondAttribute="top" id="XD6-HY-p6c"/>
+                                                <constraint firstAttribute="bottom" secondItem="Wkf-7Y-jMA" secondAttribute="bottom" id="ln6-3s-Zkt"/>
+                                                <constraint firstAttribute="bottom" secondItem="gAr-SU-XtY" secondAttribute="bottom" id="wOl-kP-7ai"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Myx-4E-yo5" id="ZaL-Ue-PGA"/>
+                            <outlet property="delegate" destination="Myx-4E-yo5" id="Jfs-5O-2Ei"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Un7-KM-mEN"/>
+                    <connections>
+                        <outlet property="destinationField" destination="aZN-Sc-eOX" id="ZLe-G3-WUM"/>
+                        <outlet property="endDateLabel" destination="DFs-f2-lCX" id="1by-NW-c1J"/>
+                        <outlet property="noteLabel" destination="gAr-SU-XtY" id="KKK-SA-Udr"/>
+                        <outlet property="startDateLabel" destination="3sx-se-KUX" id="wE9-bp-8wS"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="33L-Dh-LAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2055" y="-84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kLF-w8-wUJ">

@@ -20,6 +20,8 @@
 
 #import <EXTScope.h>
 
+#import <PureLayout.h>
+
 #import <UIAlertView+Blocks.h>
 #import "UIAlertView+Presets.h"
 

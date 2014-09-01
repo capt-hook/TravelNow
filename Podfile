@@ -13,6 +13,9 @@ pod 'UIAlertView-Blocks'
 pod 'JGProgressHUD'
 pod 'ChameleonFramework'
 pod 'NSString-Hashes'
+pod 'RSDayFlow'
+pod 'SWRevealTableViewCell'
+pod 'JGActionSheet'
 
 post_install do |installer|
   installer.project.targets.each do |target|

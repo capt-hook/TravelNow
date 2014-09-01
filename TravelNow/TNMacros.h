@@ -16,3 +16,6 @@
 #define MHIOS7() MHSystemVersionGreaterThanOrEqualTo(@"7.0")
 
 #define BaseURL @"https://blazing-heat-8600.firebaseio.com"
+
+#define QAEmail @"max.huk@gmail.com"
+#define QAPassword @"travel"

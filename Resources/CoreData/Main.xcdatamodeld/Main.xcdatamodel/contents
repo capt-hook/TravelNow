@@ -6,7 +6,7 @@
         <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="tripID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="tripID" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TNUser" inverseName="trips" inverseEntity="TNUser" syncable="YES"/>
     </entity>
     <entity name="TNUser" representedClassName="TNUser" syncable="YES">
@@ -16,7 +16,7 @@
         <relationship name="trips" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TNTrip" inverseName="user" inverseEntity="TNTrip" syncable="YES"/>
     </entity>
     <elements>
-        <element name="TNTrip" positionX="-54" positionY="0" width="128" height="148"/>
+        <element name="TNTrip" positionX="-54" positionY="0" width="128" height="150"/>
         <element name="TNUser" positionX="-63" positionY="-18" width="128" height="105"/>
     </elements>
 </model>

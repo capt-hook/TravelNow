@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F0F08593-157F-4FDD-89C8-D8D5C6D13FD5</string>
+	<string>2B682039-1DA0-4373-ACF3-B5841733B551</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TravelNow</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CB3C7E23-4346-4163-AD0A-54465EEC9BA6</key>
-		<string>http://git.toptal.com/Maksym-Huk/maksym-huk.git</string>
+		<key>F2CFBB30-3060-4A15-BECA-276490A86FA1</key>
+		<string>ssh://git.toptal.com/Maksym-Huk/maksym-huk.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TravelNow.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CB3C7E23-4346-4163-AD0A-54465EEC9BA6</key>
+		<key>F2CFBB30-3060-4A15-BECA-276490A86FA1</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>http://git.toptal.com/Maksym-Huk/maksym-huk.git</string>
+	<string>ssh://git.toptal.com/Maksym-Huk/maksym-huk.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CB3C7E23-4346-4163-AD0A-54465EEC9BA6</string>
+	<string>F2CFBB30-3060-4A15-BECA-276490A86FA1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CB3C7E23-4346-4163-AD0A-54465EEC9BA6</string>
+			<string>F2CFBB30-3060-4A15-BECA-276490A86FA1</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TravelNow</string>
 		</dict>

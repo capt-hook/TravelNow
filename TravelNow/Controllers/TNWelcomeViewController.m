@@ -32,6 +32,7 @@
 		TNLogInViewController *logInVC = navigationController.viewControllers[0];
 		logInVC.doneBlock = ^(TNLogInViewController *logInVC) {
 			[self dismissViewControllerAnimated:NO completion:nil];
+			[self performSegueWithIdentifier:@"Trips" sender:nil];
 		};
 		logInVC.cancelBlock = ^(TNLogInViewController *logInVC) {
 			[self dismissViewControllerAnimated:YES completion:nil];
@@ -41,6 +42,7 @@
 		TNSignUpViewController *signUpVC = navigationController.viewControllers[0];
 		signUpVC.doneBlock = ^(TNSignUpViewController *signUpVC) {
 			[self dismissViewControllerAnimated:NO completion:nil];
+			[self performSegueWithIdentifier:@"Trips" sender:nil];
 		};
 		signUpVC.cancelBlock = ^(TNSignUpViewController *signUpVC) {
 			[self dismissViewControllerAnimated:YES completion:nil];

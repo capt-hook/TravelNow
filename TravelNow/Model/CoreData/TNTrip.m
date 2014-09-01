@@ -2,7 +2,7 @@
 //  TNTrip.m
 //  TravelNow
 //
-//  Created by Maksym Huk on 8/31/14.
+//  Created by Maksym Huk on 9/1/14.
 //  Copyright (c) 2014 Maksym Huk. All rights reserved.
 //
 

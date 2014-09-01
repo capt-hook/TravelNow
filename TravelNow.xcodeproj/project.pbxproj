@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500974A619B3BF0600422506 /* TNTripCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974A519B3BF0600422506 /* TNTripCell.m */; };
+		500974A719B3BF0600422506 /* TNTripCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974A519B3BF0600422506 /* TNTripCell.m */; };
+		500974AB19B3C01100422506 /* NSDate+Difference.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974AA19B3C01100422506 /* NSDate+Difference.m */; };
+		500974AC19B3C01100422506 /* NSDate+Difference.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974AA19B3C01100422506 /* NSDate+Difference.m */; };
+		500974AF19B3C47900422506 /* TNTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974AE19B3C47900422506 /* TNTripViewController.m */; };
+		500974B019B3C47900422506 /* TNTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974AE19B3C47900422506 /* TNTripViewController.m */; };
+		500974B319B3D21800422506 /* TNDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974B219B3D21800422506 /* TNDateViewController.m */; };
+		500974B619B3D67B00422506 /* TNNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974B519B3D67B00422506 /* TNNoteViewController.m */; };
+		500974BA19B3DCF500422506 /* MHLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974B919B3DCF500422506 /* MHLabel.m */; };
+		500974BB19B3DCF500422506 /* MHLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974B919B3DCF500422506 /* MHLabel.m */; };
 		500C022219B169EC0069DCFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500C022119B169EC0069DCFD /* Foundation.framework */; };
 		500C022419B169EC0069DCFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500C022319B169EC0069DCFD /* CoreGraphics.framework */; };
 		500C022619B169EC0069DCFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500C022519B169EC0069DCFD /* UIKit.framework */; };
@@ -41,8 +51,6 @@
 		504DB7E719B3156D005D2993 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7E619B3156D005D2993 /* Social.framework */; };
 		504DB7EB19B317DE005D2993 /* TNAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7EA19B317DE005D2993 /* TNAPIClient.m */; };
 		504DB7EC19B317DE005D2993 /* TNAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7EA19B317DE005D2993 /* TNAPIClient.m */; };
-		504DB7EF19B31AAF005D2993 /* TNTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7EE19B31AAF005D2993 /* TNTrip.m */; };
-		504DB7F019B31AAF005D2993 /* TNTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7EE19B31AAF005D2993 /* TNTrip.m */; };
 		504DB7F819B31D1C005D2993 /* UIAlertView+Presets.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7F719B31D1C005D2993 /* UIAlertView+Presets.m */; };
 		504DB7F919B31D1C005D2993 /* UIAlertView+Presets.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7F719B31D1C005D2993 /* UIAlertView+Presets.m */; };
 		504DB7FD19B3224C005D2993 /* JGProgressHUD+Presets.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7FC19B3224C005D2993 /* JGProgressHUD+Presets.m */; };
@@ -52,6 +60,8 @@
 		50C273ED19B1D43900C47EFA /* TNLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C273EC19B1D43900C47EFA /* TNLogInViewController.m */; };
 		50C273F019B1D44000C47EFA /* TNWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C273EF19B1D44000C47EFA /* TNWelcomeViewController.m */; };
 		50C273F319B1D44900C47EFA /* TNSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C273F219B1D44900C47EFA /* TNSignUpViewController.m */; };
+		50CAE85719B3F21F000BE31A /* TNFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CAE85619B3F21F000BE31A /* TNFilterViewController.m */; };
+		50CAE85A19B3F453000BE31A /* TNTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CAE85919B3F453000BE31A /* TNTrip.m */; };
 		992ABDFF4EFD47F8B45C9D7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7230D91EAC2648BEA27CC0B0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +76,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		500974A419B3BF0600422506 /* TNTripCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTripCell.h; sourceTree = "<group>"; };
+		500974A519B3BF0600422506 /* TNTripCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTripCell.m; sourceTree = "<group>"; };
+		500974A919B3C01100422506 /* NSDate+Difference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Difference.h"; sourceTree = "<group>"; };
+		500974AA19B3C01100422506 /* NSDate+Difference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Difference.m"; sourceTree = "<group>"; };
+		500974AD19B3C47900422506 /* TNTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTripViewController.h; sourceTree = "<group>"; };
+		500974AE19B3C47900422506 /* TNTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTripViewController.m; sourceTree = "<group>"; };
+		500974B119B3D21800422506 /* TNDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDateViewController.h; sourceTree = "<group>"; };
+		500974B219B3D21800422506 /* TNDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDateViewController.m; sourceTree = "<group>"; };
+		500974B419B3D67B00422506 /* TNNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNNoteViewController.h; sourceTree = "<group>"; };
+		500974B519B3D67B00422506 /* TNNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNNoteViewController.m; sourceTree = "<group>"; };
+		500974B819B3DCF500422506 /* MHLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHLabel.h; sourceTree = "<group>"; };
+		500974B919B3DCF500422506 /* MHLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHLabel.m; sourceTree = "<group>"; };
 		500C021E19B169EC0069DCFD /* TravelNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		500C022119B169EC0069DCFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		500C022319B169EC0069DCFD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -99,8 +121,6 @@
 		504DB7E619B3156D005D2993 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		504DB7E919B317DE005D2993 /* TNAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNAPIClient.h; sourceTree = "<group>"; };
 		504DB7EA19B317DE005D2993 /* TNAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNAPIClient.m; sourceTree = "<group>"; };
-		504DB7ED19B31AAF005D2993 /* TNTrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTrip.h; sourceTree = "<group>"; };
-		504DB7EE19B31AAF005D2993 /* TNTrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTrip.m; sourceTree = "<group>"; };
 		504DB7F619B31D1C005D2993 /* UIAlertView+Presets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Presets.h"; sourceTree = "<group>"; };
 		504DB7F719B31D1C005D2993 /* UIAlertView+Presets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Presets.m"; sourceTree = "<group>"; };
 		504DB7FB19B3224C005D2993 /* JGProgressHUD+Presets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JGProgressHUD+Presets.h"; sourceTree = "<group>"; };
@@ -115,6 +135,10 @@
 		50C273EF19B1D44000C47EFA /* TNWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNWelcomeViewController.m; sourceTree = "<group>"; };
 		50C273F119B1D44900C47EFA /* TNSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSignUpViewController.h; sourceTree = "<group>"; };
 		50C273F219B1D44900C47EFA /* TNSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSignUpViewController.m; sourceTree = "<group>"; };
+		50CAE85519B3F21F000BE31A /* TNFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNFilterViewController.h; sourceTree = "<group>"; };
+		50CAE85619B3F21F000BE31A /* TNFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNFilterViewController.m; sourceTree = "<group>"; };
+		50CAE85819B3F453000BE31A /* TNTrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTrip.h; sourceTree = "<group>"; };
+		50CAE85919B3F453000BE31A /* TNTrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTrip.m; sourceTree = "<group>"; };
 		7230D91EAC2648BEA27CC0B0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9214DB765D743038C5ADFAB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +178,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		500974A319B3BEC700422506 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				500974A419B3BF0600422506 /* TNTripCell.h */,
+				500974A519B3BF0600422506 /* TNTripCell.m */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		500974A819B3C00500422506 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				500974A919B3C01100422506 /* NSDate+Difference.h */,
+				500974AA19B3C01100422506 /* NSDate+Difference.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		500974B719B3DCF500422506 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				500974B819B3DCF500422506 /* MHLabel.h */,
+				500974B919B3DCF500422506 /* MHLabel.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
 		500C021519B169EC0069DCFD = {
 			isa = PBXGroup;
 			children = (
@@ -213,8 +264,6 @@
 		500C024019B169ED0069DCFD /* TravelNowTests */ = {
 			isa = PBXGroup;
 			children = (
-				504DB7CE19B31313005D2993 /* Firebase.framework */,
-				504DB7CF19B31313005D2993 /* FirebaseSimpleLogin.framework */,
 				500C024619B169ED0069DCFD /* TravelNowTests.m */,
 			);
 			path = TravelNowTests;
@@ -311,6 +360,14 @@
 				50C273F219B1D44900C47EFA /* TNSignUpViewController.m */,
 				5054767519B3B3EE00602858 /* TNTripsViewController.h */,
 				5054767619B3B3EE00602858 /* TNTripsViewController.m */,
+				500974AD19B3C47900422506 /* TNTripViewController.h */,
+				500974AE19B3C47900422506 /* TNTripViewController.m */,
+				500974B119B3D21800422506 /* TNDateViewController.h */,
+				500974B219B3D21800422506 /* TNDateViewController.m */,
+				500974B419B3D67B00422506 /* TNNoteViewController.h */,
+				500974B519B3D67B00422506 /* TNNoteViewController.m */,
+				50CAE85519B3F21F000BE31A /* TNFilterViewController.h */,
+				50CAE85619B3F21F000BE31A /* TNFilterViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -328,6 +385,7 @@
 		500C027319B1BF6F0069DCFD /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				500974A819B3C00500422506 /* NSDate */,
 				504DB7FA19B3223F005D2993 /* JGProgressHUD */,
 				504DB7F519B31D1C005D2993 /* UIAlertView */,
 				504DB7D719B31489005D2993 /* NSString */,
@@ -338,6 +396,7 @@
 		500C027419B1BF6F0069DCFD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				500974A319B3BEC700422506 /* TableCells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -345,10 +404,10 @@
 		500C027919B1BFCE0069DCFD /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				504DB7ED19B31AAF005D2993 /* TNTrip.h */,
-				504DB7EE19B31AAF005D2993 /* TNTrip.m */,
 				5054767219B3AFBD00602858 /* TNUser.h */,
 				5054767319B3AFBD00602858 /* TNUser.m */,
+				50CAE85819B3F453000BE31A /* TNTrip.h */,
+				50CAE85919B3F453000BE31A /* TNTrip.m */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -356,6 +415,9 @@
 		500C027A19B1C0050069DCFD /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				504DB7CE19B31313005D2993 /* Firebase.framework */,
+				504DB7CF19B31313005D2993 /* FirebaseSimpleLogin.framework */,
+				500974B719B3DCF500422506 /* UILabel */,
 				500C027B19B1C0050069DCFD /* CocoaLumberjack */,
 			);
 			path = Lib;
@@ -535,18 +597,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				504DB7DA19B31489005D2993 /* NSString+Password.m in Sources */,
+				50CAE85A19B3F453000BE31A /* TNTrip.m in Sources */,
 				500C027E19B1C0050069DCFD /* MHLog.m in Sources */,
 				500C026F19B1BF4E0069DCFD /* Main.xcdatamodeld in Sources */,
+				500974AB19B3C01100422506 /* NSDate+Difference.m in Sources */,
+				50CAE85719B3F21F000BE31A /* TNFilterViewController.m in Sources */,
 				504DB7F819B31D1C005D2993 /* UIAlertView+Presets.m in Sources */,
-				504DB7EF19B31AAF005D2993 /* TNTrip.m in Sources */,
+				500974AF19B3C47900422506 /* TNTripViewController.m in Sources */,
 				5054767419B3AFBD00602858 /* TNUser.m in Sources */,
 				50C273F319B1D44900C47EFA /* TNSignUpViewController.m in Sources */,
 				500C023219B169EC0069DCFD /* TNAppDelegate.m in Sources */,
+				500974A619B3BF0600422506 /* TNTripCell.m in Sources */,
 				504DB7EB19B317DE005D2993 /* TNAPIClient.m in Sources */,
+				500974B319B3D21800422506 /* TNDateViewController.m in Sources */,
 				5054767719B3B3EE00602858 /* TNTripsViewController.m in Sources */,
 				50C273ED19B1D43900C47EFA /* TNLogInViewController.m in Sources */,
 				504DB7FD19B3224C005D2993 /* JGProgressHUD+Presets.m in Sources */,
 				500C028119B1C04A0069DCFD /* main.m in Sources */,
+				500974BA19B3DCF500422506 /* MHLabel.m in Sources */,
+				500974B619B3D67B00422506 /* TNNoteViewController.m in Sources */,
 				50C273F019B1D44000C47EFA /* TNWelcomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,13 +625,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				504DB7F919B31D1C005D2993 /* UIAlertView+Presets.m in Sources */,
+				500974B019B3C47900422506 /* TNTripViewController.m in Sources */,
 				500C028219B1C04A0069DCFD /* main.m in Sources */,
 				504DB7FE19B3224C005D2993 /* JGProgressHUD+Presets.m in Sources */,
-				504DB7F019B31AAF005D2993 /* TNTrip.m in Sources */,
 				504DB7EC19B317DE005D2993 /* TNAPIClient.m in Sources */,
 				500C027019B1BF4E0069DCFD /* Main.xcdatamodeld in Sources */,
 				504DB7DB19B31489005D2993 /* NSString+Password.m in Sources */,
+				500974BB19B3DCF500422506 /* MHLabel.m in Sources */,
+				500974AC19B3C01100422506 /* NSDate+Difference.m in Sources */,
 				500C027F19B1C0050069DCFD /* MHLog.m in Sources */,
+				500974A719B3BF0600422506 /* TNTripCell.m in Sources */,
 				500C024719B169ED0069DCFD /* TravelNowTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

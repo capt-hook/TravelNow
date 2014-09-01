@@ -2,7 +2,7 @@
 //  TNTrip.h
 //  TravelNow
 //
-//  Created by Maksym Huk on 8/31/14.
+//  Created by Maksym Huk on 9/1/14.
 //  Copyright (c) 2014 Maksym Huk. All rights reserved.
 //
 
@@ -18,7 +18,7 @@
 @property (nonatomic, retain) NSString * note;
 @property (nonatomic, retain) NSNumber * order;
 @property (nonatomic, retain) NSDate * startDate;
-@property (nonatomic, retain) NSNumber * tripID;
+@property (nonatomic, retain) NSString * tripID;
 @property (nonatomic, retain) TNUser *user;
 
 @end

@@ -12,8 +12,6 @@
 
 @interface TNSignUpViewController () <UITextFieldDelegate>
 
-@property (nonatomic, strong) JGProgressHUD *progressHUD;
-
 @property (nonatomic, weak) IBOutlet UITextField *emailField;
 @property (nonatomic, weak) IBOutlet UITextField *passwordField;
 @property (nonatomic, weak) IBOutlet UITextField *confirmPasswordField;
@@ -25,25 +23,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	[self configureFormFields];
-}
-
-- (void)configureFormFields {
+	if (QA) {
+		self.emailField.text = QAEmail;
+		self.passwordField.text = QAPassword;
+		self.confirmPasswordField.text = QAPassword;
+	}
 }
 
 - (void)signUp {
 	NSString *email = self.emailField.text;
 	NSString *password = [self.passwordField.text bakedPassword];
 	
-	self.progressHUD = [JGProgressHUD progressHUDWithText:LS(@"Signing you up") detailText:LS(@"Just a sec..")];
-	[self.progressHUD showInView:self.view.window];
+	JGProgressHUD *progressHUD = [JGProgressHUD progressHUDWithText:LS(@"Signing you up") detailText:LS(@"Just a sec..")];
+	[progressHUD showInView:self.view.window];
 	
 	[[TNAPIClient sharedAPIClient] signUpWithEmail:email password:password completionBlock:^(NSError *error) {
 		if (error) {
-			[self.progressHUD dismissAsError];
+			[progressHUD dismissAsError];
 			[UIAlertView showAlert:LS(@"Sorry") withMessage:error.localizedDescription];
 		} else {
-			[self.progressHUD dismissAsSuccess];
+			[progressHUD dismissAsSuccess];
 			if (self.doneBlock) {
 				self.doneBlock(self);
 			}
