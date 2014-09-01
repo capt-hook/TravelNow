@@ -134,6 +134,41 @@
 	[self performSegueWithIdentifier:@"Trip" sender:trip];
 }
 
+- (NSString *)textToPrint {
+	NSMutableString *text = [NSMutableString new];
+	return text;
+}
+
+- (NSString *)printJobName {
+	NSDateFormatter *dateFormatter = [NSDateFormatter new];
+	dateFormatter.locale = [NSLocale autoupdatingCurrentLocale];
+	dateFormatter.dateFormat = @"MMM";
+	return [dateFormatter stringFromDate:[NSDate date]];
+}
+
+- (void)printTravelPlan {
+	UIPrintInteractionController *printController = [UIPrintInteractionController sharedPrintController];
+	if (!printController) {
+		[UIAlertView showAlert:LS(@"Sorry!") withMessage:LS(@"Can not find a printer.")];
+	} else {
+		UISimpleTextPrintFormatter *printFormatter = [[UISimpleTextPrintFormatter alloc] initWithText:[self textToPrint]];
+		printController.printFormatter = printFormatter;
+		
+		UIPrintInfo *printInfo = [UIPrintInfo printInfo];
+		printInfo.outputType = UIPrintInfoOutputGeneral;
+		printInfo.jobName = [self printJobName];
+		printInfo.duplex = UIPrintInfoDuplexLongEdge;
+		printController.printInfo = printInfo;
+		
+		[printController presentAnimated:YES completionHandler:^(UIPrintInteractionController *printInteractionController, BOOL completed, NSError *error) {
+			if (error) {
+				DDLogError(@"%@", error);
+				[UIAlertView showAlert:LS(@"Sorry!") withMessage:error.localizedDescription];
+			}
+		}];
+	}
+}
+
 #pragma mark - UITableView
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -284,6 +319,13 @@
 	JGActionSheet *sheet = [JGActionSheet actionSheetWithSections:sections];
 	
 	[sheet setButtonPressedBlock:^(JGActionSheet *sheet, NSIndexPath *indexPath) {
+		if ([indexPath isEqual:[NSIndexPath indexPathForRow:0 inSection:0]]) { // filter
+			
+		} else if ([indexPath isEqual:[NSIndexPath indexPathForRow:1 inSection:0]]) { // print
+			[self printTravelPlan];
+		} else if ([indexPath isEqual:[NSIndexPath indexPathForRow:2 inSection:0]]) { // log out
+			
+		}
 		[sheet dismissAnimated:YES];
 	}];
 	
