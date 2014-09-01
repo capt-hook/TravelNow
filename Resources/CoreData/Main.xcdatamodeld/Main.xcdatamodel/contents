@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="TNFilter" representedClassName="TNFilter" syncable="YES">
+        <attribute name="destination" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TNUser" inverseName="filter" inverseEntity="TNUser" syncable="YES"/>
+    </entity>
     <entity name="TNTrip" representedClassName="TNTrip" syncable="YES">
         <attribute name="destination" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
@@ -13,10 +17,12 @@
         <attribute name="authToken" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="filter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TNFilter" inverseName="user" inverseEntity="TNFilter" syncable="YES"/>
         <relationship name="trips" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TNTrip" inverseName="user" inverseEntity="TNTrip" syncable="YES"/>
     </entity>
     <elements>
         <element name="TNTrip" positionX="-54" positionY="0" width="128" height="150"/>
-        <element name="TNUser" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="TNUser" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="TNFilter" positionX="-63" positionY="54" width="128" height="73"/>
     </elements>
 </model>

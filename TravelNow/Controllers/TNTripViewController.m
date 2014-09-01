@@ -26,7 +26,6 @@
 	
 	self.title = LS(@"Edit trip");
 	
-	[self configureNavigationItem];
 	[self configureFormFields];
 }
 
@@ -36,15 +35,9 @@
 	[self.view endEditing:YES];
 }
 
-- (void)configureNavigationItem {
-	self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelButtonTapped:)];
-	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneButtonTapped:)];
-}
-
 - (void)configureFormFields {
-	UIFont *font = [UIFont fontWithName:@"HelveticaNeue-Light" size:14];
-	UIColor *color = [UIColor lightGrayColor];
-	self.destinationField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:LS(@"Destination") attributes:@{ NSFontAttributeName : font, NSForegroundColorAttributeName : color }];
+	UIFont *font = TNFormFieldFont;
+	self.destinationField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:LS(@"Destination") attributes:@{ NSFontAttributeName : font, NSForegroundColorAttributeName : TNFormPlaceholderColor }];
 	self.startDateLabel.font = font;
 	self.endDateLabel.font = font;
 	self.noteLabel.font = font;
@@ -64,10 +57,10 @@
 - (void)plugDate:(NSDate *)date intoLabel:(UILabel *)label placeholder:(NSString *)placeholder {
 	if (date) {
 		label.text = [[self dateFormatter] stringFromDate:date];
-		label.textColor = [UIColor darkGrayColor];
+		label.textColor = TNFormValueColor;
 	} else {
 		label.text = placeholder;
-		label.textColor = [UIColor lightGrayColor];
+		label.textColor = TNFormPlaceholderColor;
 	}
 }
 
@@ -118,16 +111,21 @@
 	}
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+	[textField resignFirstResponder];
+	return NO;
+}
+
 #pragma mark - Actions
 
-- (void)cancelButtonTapped:(UIBarButtonItem *)button {
+- (IBAction)cancelButtonTapped:(UIBarButtonItem *)button {
 	[self.view endEditing:YES];
 	if (self.cancelBlock) {
 		self.cancelBlock();
 	}
 }
 
-- (void)doneButtonTapped:(UIBarButtonItem *)button {
+- (IBAction)doneButtonTapped:(UIBarButtonItem *)button {
 	[self.view endEditing:YES];
 	
 	if (![self validateForm]) {

@@ -8,6 +8,12 @@
 
 #import <XCTest/XCTest.h>
 
+#import "TNAPIClient.h"
+#import "TNTrip.h"
+
+#import "NSString+Password.h"
+#import <NSManagedObject+MagicalRecord.h>
+
 @interface TravelNowTests : XCTestCase
 
 @end
@@ -18,13 +24,50 @@
     [super setUp];
 }
 
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+- (void)tearDown {
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testLogIn {
+	[[TNAPIClient sharedAPIClient] logInWithEmail:QAEmail password:[QAPassword bakedPassword] completion:^(NSError *error) {
+		XCTAssertNil(error, @"");
+	}];
+	[[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
+}
+
+- (void)testAddTrip {
+	[[TNAPIClient sharedAPIClient] logInWithEmail:QAEmail password:[QAPassword bakedPassword] completion:^(NSError *error) {
+		XCTAssertNil(error, @"");
+		
+		TNTrip *trip = [TNTrip MR_createEntity];
+		trip.destination = @"Paris";
+		trip.startDate = [NSDate date];
+		trip.endDate = [NSDate date];
+		trip.note = @"Note";
+		[[TNAPIClient sharedAPIClient] addTrip:trip completion:^(NSError *error) {
+			XCTAssertNil(error, @"");
+		}];
+	}];
+	[[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
+}
+
+- (void)testDeleteTrip {
+	[[TNAPIClient sharedAPIClient] logInWithEmail:QAEmail password:[QAPassword bakedPassword] completion:^(NSError *error) {
+		XCTAssertNil(error, @"");
+		
+		TNTrip *trip = [TNTrip MR_createEntity];
+		trip.destination = @"Paris";
+		trip.startDate = [NSDate date];
+		trip.endDate = [NSDate date];
+		trip.note = @"Note";
+		[[TNAPIClient sharedAPIClient] addTrip:trip completion:^(NSError *error) {
+			XCTAssertNil(error, @"");
+			[[TNAPIClient sharedAPIClient] deleteTrip:trip completion:^(NSError *error) {
+				XCTAssertNil(error, @"");
+			}];
+		}];
+	}];
+	[[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
 }
 
 @end

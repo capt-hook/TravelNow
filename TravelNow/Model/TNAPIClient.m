@@ -135,7 +135,6 @@ static TNAPIClient *_sharedAPIClient = nil;
     return dateFormatter;
 }
 
-
 - (void)addTrip:(TNTrip *)trip completion:(void (^)(NSError *error))completion {
 	NSString *path = [NSString stringWithFormat:@"users/%@/trips.json", self.user.userID];
 	NSDateFormatter *dateFormatter = [self dateFormatter];

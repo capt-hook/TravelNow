@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TNFilterViewController : UIViewController
+#import "TNFilter.h"
+
+@interface TNFilterViewController : UITableViewController
+
+@property (nonatomic, strong) TNFilter *filter;
+
+@property (nonatomic, copy) void (^doneBlock)();
+@property (nonatomic, copy) void (^cancelBlock)();
 
 @end

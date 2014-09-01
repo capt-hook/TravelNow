@@ -41,6 +41,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="Log In">
+                                            <color key="titleColor" red="0.9767052531" green="0.60546392199999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -52,6 +53,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="Sign Up">
+                                            <color key="titleColor" red="0.9767052531" green="0.60546392199999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -170,11 +172,92 @@
                     </refreshControl>
                     <connections>
                         <segue destination="Myx-4E-yo5" kind="push" identifier="Trip" id="t1d-PT-6g5"/>
+                        <segue destination="M3g-QI-iHr" kind="modal" identifier="Filter" id="8A4-hI-N4N"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rk4-GH-wfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1637" y="-84"/>
+        </scene>
+        <!--Filter View Controller-->
+        <scene sceneID="8w9-QV-Pkc">
+            <objects>
+                <tableViewController id="66g-TA-3bW" customClass="TNFilterViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ngp-X4-8Ak">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="cHn-HD-Nkq">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="uta-O2-xnx">
+                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uta-O2-xnx" id="vgR-Tw-o2w">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Destination" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Wpe-ec-aFC" userLabel="Destination">
+                                                    <rect key="frame" x="15" y="0.0" width="305" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="66g-TA-3bW" id="FOy-xn-8Ke"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Wpe-ec-aFC" firstAttribute="leading" secondItem="vgR-Tw-o2w" secondAttribute="leading" constant="15" id="MEj-s2-QSd"/>
+                                                <constraint firstAttribute="trailing" secondItem="Wpe-ec-aFC" secondAttribute="trailing" id="gcO-gp-Vro"/>
+                                                <constraint firstAttribute="bottom" secondItem="Wpe-ec-aFC" secondAttribute="bottom" id="oMd-VA-p48"/>
+                                                <constraint firstItem="Wpe-ec-aFC" firstAttribute="top" secondItem="vgR-Tw-o2w" secondAttribute="top" id="tic-xu-023"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="66g-TA-3bW" id="fYZ-k1-k6X"/>
+                            <outlet property="delegate" destination="66g-TA-3bW" id="8Yl-J6-cFz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="LCn-GU-V4Y">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="k8Y-WR-WTP">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="66g-TA-3bW" id="Kzi-LZ-x1y"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="3x0-Qg-5eF">
+                            <connections>
+                                <action selector="doneButtonTapped:" destination="66g-TA-3bW" id="ijM-0M-giJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="destinationField" destination="Wpe-ec-aFC" id="Bwz-6D-g9H"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zuf-rI-xgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2055" y="652"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RC7-Qt-Y4q">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="M3g-QI-iHr" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DaR-1z-KZc">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.9767052531" green="0.60546392199999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="66g-TA-3bW" kind="relationship" relationship="rootViewController" id="QrD-KG-S1C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bwK-0S-ZvV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1637" y="652"/>
         </scene>
         <!--Trip View Controller-->
         <scene sceneID="VgV-Ut-fD7">
@@ -337,7 +420,18 @@
                             <outlet property="delegate" destination="Myx-4E-yo5" id="Jfs-5O-2Ei"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Un7-KM-mEN"/>
+                    <navigationItem key="navigationItem" id="Un7-KM-mEN">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Obi-xs-LAU">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="Myx-4E-yo5" id="Djw-eS-sKn"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ejh-Du-2MH">
+                            <connections>
+                                <action selector="doneButtonTapped:" destination="Myx-4E-yo5" id="DJm-Mw-Nsn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="destinationField" destination="aZN-Sc-eOX" id="ZLe-G3-WUM"/>
                         <outlet property="endDateLabel" destination="DFs-f2-lCX" id="1by-NW-c1J"/>

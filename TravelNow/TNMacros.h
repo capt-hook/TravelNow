@@ -19,3 +19,7 @@
 
 #define QAEmail @"max.huk@gmail.com"
 #define QAPassword @"travel"
+
+#define TNFormFieldFont [UIFont fontWithName:@"HelveticaNeue-Light" size:14]
+#define TNFormPlaceholderColor [UIColor lightGrayColor]
+#define TNFormValueColor [UIColor darkGrayColor]

@@ -8,6 +8,7 @@
 
 #import "TNTripsViewController.h"
 #import "TNTripViewController.h"
+#import "TNFilterViewController.h"
 
 #import <CoreData/CoreData.h>
 #import <NSManagedObject+MagicalRecord.h>
@@ -57,7 +58,14 @@
 }
 
 - (NSFetchRequest *)tripsFetchRequest {
-	return [TNTrip MR_requestAllSortedBy:@"destination" ascending:YES withPredicate:[NSPredicate predicateWithFormat:@"user = %@", [TNAPIClient sharedAPIClient].user]];
+	TNUser *user = [TNAPIClient sharedAPIClient].user;
+	NSMutableArray *predicates = [NSMutableArray new];
+	[predicates addObject:[NSPredicate predicateWithFormat:@"user = %@", user]];
+	if (user.filter.destination.length) {
+		[predicates addObject:[NSPredicate predicateWithFormat:@"destination CONTAINS[c] %@", user.filter.destination]];
+	}
+	NSPredicate *predicate = [NSCompoundPredicate andPredicateWithSubpredicates:predicates];
+	return [TNTrip MR_requestAllSortedBy:@"destination" ascending:YES withPredicate:predicate];
 }
 
 - (void)setupTrips {
@@ -116,12 +124,38 @@
 			self.tempContext = nil;
 			[self.navigationController popToViewController:self animated:YES];
 		};
+	} else if ([segue.identifier isEqualToString:@"Filter"]) {
+		[self setupTempContext];
+		UINavigationController *navigationController = (UINavigationController *)segue.destinationViewController;
+		TNFilterViewController *filterVC = navigationController.childViewControllers[0];
+		TNUser *user = (TNUser *)[self.tempContext objectWithID:[TNAPIClient sharedAPIClient].user.objectID];
+		TNFilter *filter = user.filter;
+		if (!filter) {
+			filter = [TNFilter MR_createInContext:self.tempContext];
+			user.filter = filter;
+		}
+		filterVC.filter = filter;
+		filterVC.doneBlock = ^{
+			[self.tempContext MR_saveToPersistentStoreAndWait];
+			self.tempContext = nil;
+			[self applyFilter];
+			[self dismissViewControllerAnimated:YES completion:nil];
+		};
+		filterVC.cancelBlock = ^{
+			self.tempContext = nil;
+			[self dismissViewControllerAnimated:YES completion:nil];
+		};
 	}
 }
 
 - (void)setupTempContext {
 	self.tempContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
 	[self.tempContext setParentContext:[NSManagedObjectContext MR_defaultContext]];
+}
+
+- (void)applyFilter {
+	[self setupTrips];
+	[self.tableView reloadData];
 }
 
 - (void)addTrip {
@@ -134,8 +168,30 @@
 	[self performSegueWithIdentifier:@"Trip" sender:trip];
 }
 
+- (NSDate *)datePlusOneMonth:(NSDate *)date {
+	NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
+	[dateComponents setMonth:1];
+	NSCalendar *calendar = [NSCalendar currentCalendar];
+	return [calendar dateByAddingComponents:dateComponents toDate:date options:0];
+}
+
+- (NSString *)textToPrintForTrip:(TNTrip *)trip {
+	NSDateFormatter *dateFormatter = [NSDateFormatter new];
+	dateFormatter.dateStyle = NSDateFormatterMediumStyle;
+	return [NSString stringWithFormat:@"%@: %@ - %@\n%@\n\n", trip.destination, [dateFormatter stringFromDate:trip.startDate], [dateFormatter stringFromDate:trip.endDate], trip.note];
+}
+
 - (NSString *)textToPrint {
 	NSMutableString *text = [NSMutableString new];
+	
+	NSDate *startDate = [NSDate date];
+	NSDate *endDate = [self datePlusOneMonth:startDate];
+	
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(startDate >= %@) AND (startDate <= %@)", startDate, endDate];
+	NSArray *trips = [TNTrip MR_findAllSortedBy:@"destination" ascending:YES withPredicate:predicate];
+	for (TNTrip *trip in trips) {
+		[text appendString:[self textToPrintForTrip:trip]];
+	}
 	return text;
 }
 
@@ -320,7 +376,7 @@
 	
 	[sheet setButtonPressedBlock:^(JGActionSheet *sheet, NSIndexPath *indexPath) {
 		if ([indexPath isEqual:[NSIndexPath indexPathForRow:0 inSection:0]]) { // filter
-			
+			[self performSegueWithIdentifier:@"Filter" sender:nil];
 		} else if ([indexPath isEqual:[NSIndexPath indexPathForRow:1 inSection:0]]) { // print
 			[self printTravelPlan];
 		} else if ([indexPath isEqual:[NSIndexPath indexPathForRow:2 inSection:0]]) { // log out
