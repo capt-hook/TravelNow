@@ -8,41 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		500974A619B3BF0600422506 /* TNTripCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974A519B3BF0600422506 /* TNTripCell.m */; };
-		500974A719B3BF0600422506 /* TNTripCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974A519B3BF0600422506 /* TNTripCell.m */; };
 		500974AB19B3C01100422506 /* NSDate+Difference.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974AA19B3C01100422506 /* NSDate+Difference.m */; };
-		500974AC19B3C01100422506 /* NSDate+Difference.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974AA19B3C01100422506 /* NSDate+Difference.m */; };
 		500974AF19B3C47900422506 /* TNTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974AE19B3C47900422506 /* TNTripViewController.m */; };
-		500974B019B3C47900422506 /* TNTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974AE19B3C47900422506 /* TNTripViewController.m */; };
 		500974B319B3D21800422506 /* TNDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974B219B3D21800422506 /* TNDateViewController.m */; };
 		500974B619B3D67B00422506 /* TNNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974B519B3D67B00422506 /* TNNoteViewController.m */; };
 		500974BA19B3DCF500422506 /* MHLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974B919B3DCF500422506 /* MHLabel.m */; };
-		500974BB19B3DCF500422506 /* MHLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 500974B919B3DCF500422506 /* MHLabel.m */; };
 		500C022219B169EC0069DCFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500C022119B169EC0069DCFD /* Foundation.framework */; };
 		500C022419B169EC0069DCFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500C022319B169EC0069DCFD /* CoreGraphics.framework */; };
 		500C022619B169EC0069DCFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500C022519B169EC0069DCFD /* UIKit.framework */; };
 		500C023219B169EC0069DCFD /* TNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C023119B169EC0069DCFD /* TNAppDelegate.m */; };
-		500C023B19B169ED0069DCFD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500C023A19B169ED0069DCFD /* XCTest.framework */; };
-		500C023C19B169ED0069DCFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500C022119B169EC0069DCFD /* Foundation.framework */; };
-		500C023D19B169ED0069DCFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500C022519B169EC0069DCFD /* UIKit.framework */; };
-		500C024719B169ED0069DCFD /* TravelNowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C024619B169ED0069DCFD /* TravelNowTests.m */; };
 		500C025219B1BEBB0069DCFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 500C025119B1BEBB0069DCFD /* Images.xcassets */; };
-		500C025319B1BEBB0069DCFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 500C025119B1BEBB0069DCFD /* Images.xcassets */; };
 		500C025B19B1BEC40069DCFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 500C025819B1BEC40069DCFD /* InfoPlist.strings */; };
-		500C026319B1BECA0069DCFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 500C026019B1BECA0069DCFD /* InfoPlist.strings */; };
 		500C026619B1BF300069DCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500C026519B1BF300069DCFD /* Main.storyboard */; };
-		500C026719B1BF300069DCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500C026519B1BF300069DCFD /* Main.storyboard */; };
 		500C026F19B1BF4E0069DCFD /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 500C026D19B1BF4E0069DCFD /* Main.xcdatamodeld */; };
-		500C027019B1BF4E0069DCFD /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 500C026D19B1BF4E0069DCFD /* Main.xcdatamodeld */; };
 		500C027E19B1C0050069DCFD /* MHLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C027D19B1C0050069DCFD /* MHLog.m */; };
-		500C027F19B1C0050069DCFD /* MHLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C027D19B1C0050069DCFD /* MHLog.m */; };
 		500C028119B1C04A0069DCFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C028019B1C04A0069DCFD /* main.m */; };
-		500C028219B1C04A0069DCFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C028019B1C04A0069DCFD /* main.m */; };
 		504DB7D019B31313005D2993 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7CE19B31313005D2993 /* Firebase.framework */; };
-		504DB7D119B31313005D2993 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7CE19B31313005D2993 /* Firebase.framework */; };
 		504DB7D219B31313005D2993 /* FirebaseSimpleLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7CF19B31313005D2993 /* FirebaseSimpleLogin.framework */; };
-		504DB7D319B31313005D2993 /* FirebaseSimpleLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7CF19B31313005D2993 /* FirebaseSimpleLogin.framework */; };
 		504DB7DA19B31489005D2993 /* NSString+Password.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7D919B31489005D2993 /* NSString+Password.m */; };
-		504DB7DB19B31489005D2993 /* NSString+Password.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7D919B31489005D2993 /* NSString+Password.m */; };
 		504DB7DD19B3153F005D2993 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7DC19B3153F005D2993 /* libicucore.dylib */; };
 		504DB7DF19B31546005D2993 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7DE19B31546005D2993 /* libc++.dylib */; };
 		504DB7E119B3154F005D2993 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7E019B3154F005D2993 /* CFNetwork.framework */; };
@@ -50,11 +33,8 @@
 		504DB7E519B3155D005D2993 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7E419B3155D005D2993 /* SystemConfiguration.framework */; };
 		504DB7E719B3156D005D2993 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7E619B3156D005D2993 /* Social.framework */; };
 		504DB7EB19B317DE005D2993 /* TNAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7EA19B317DE005D2993 /* TNAPIClient.m */; };
-		504DB7EC19B317DE005D2993 /* TNAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7EA19B317DE005D2993 /* TNAPIClient.m */; };
 		504DB7F819B31D1C005D2993 /* UIAlertView+Presets.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7F719B31D1C005D2993 /* UIAlertView+Presets.m */; };
-		504DB7F919B31D1C005D2993 /* UIAlertView+Presets.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7F719B31D1C005D2993 /* UIAlertView+Presets.m */; };
 		504DB7FD19B3224C005D2993 /* JGProgressHUD+Presets.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7FC19B3224C005D2993 /* JGProgressHUD+Presets.m */; };
-		504DB7FE19B3224C005D2993 /* JGProgressHUD+Presets.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DB7FC19B3224C005D2993 /* JGProgressHUD+Presets.m */; };
 		5054767719B3B3EE00602858 /* TNTripsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5054767619B3B3EE00602858 /* TNTripsViewController.m */; };
 		50C273ED19B1D43900C47EFA /* TNLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C273EC19B1D43900C47EFA /* TNLogInViewController.m */; };
 		50C273F019B1D44000C47EFA /* TNWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C273EF19B1D44000C47EFA /* TNWelcomeViewController.m */; };
@@ -63,24 +43,8 @@
 		50CAE85A19B3F453000BE31A /* TNTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CAE85919B3F453000BE31A /* TNTrip.m */; };
 		50CAE86019B44E19000BE31A /* TNFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CAE85F19B44E19000BE31A /* TNFilter.m */; };
 		50CAE86319B452CE000BE31A /* TNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CAE86219B452CE000BE31A /* TNUser.m */; };
-		50CAE86419B460C5000BE31A /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7DE19B31546005D2993 /* libc++.dylib */; };
-		50CAE86519B4610E000BE31A /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7DC19B3153F005D2993 /* libicucore.dylib */; };
-		50CAE86619B46117000BE31A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7E019B3154F005D2993 /* CFNetwork.framework */; };
-		50CAE86719B4691E000BE31A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7E219B31557005D2993 /* Security.framework */; };
-		50CAE86819B4692D000BE31A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7E619B3156D005D2993 /* Social.framework */; };
-		50CAE86919B46935000BE31A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DB7E419B3155D005D2993 /* SystemConfiguration.framework */; };
 		992ABDFF4EFD47F8B45C9D7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7230D91EAC2648BEA27CC0B0 /* libPods.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		500C023E19B169ED0069DCFD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 500C021619B169EC0069DCFD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 500C021D19B169EC0069DCFD;
-			remoteInfo = TravelNow;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		500974A419B3BF0600422506 /* TNTripCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTripCell.h; sourceTree = "<group>"; };
@@ -102,14 +66,10 @@
 		500C022F19B169EC0069DCFD /* TravelNow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelNow-Prefix.pch"; sourceTree = "<group>"; };
 		500C023019B169EC0069DCFD /* TNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNAppDelegate.h; sourceTree = "<group>"; };
 		500C023119B169EC0069DCFD /* TNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNAppDelegate.m; sourceTree = "<group>"; };
-		500C023919B169ED0069DCFD /* TravelNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		500C023A19B169ED0069DCFD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		500C024619B169ED0069DCFD /* TravelNowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravelNowTests.m; sourceTree = "<group>"; };
 		500C025119B1BEBB0069DCFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		500C025619B1BEC40069DCFD /* TravelNow-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TravelNow-Info.plist"; sourceTree = "<group>"; };
 		500C025919B1BEC40069DCFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		500C025E19B1BECA0069DCFD /* TravelNowTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TravelNowTests-Info.plist"; sourceTree = "<group>"; };
-		500C026119B1BECA0069DCFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		500C026519B1BF300069DCFD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		500C026E19B1BF4E0069DCFD /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		500C027C19B1C0050069DCFD /* MHLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHLog.h; sourceTree = "<group>"; };
@@ -172,24 +132,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		500C023619B169ED0069DCFD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50CAE86919B46935000BE31A /* SystemConfiguration.framework in Frameworks */,
-				50CAE86819B4692D000BE31A /* Social.framework in Frameworks */,
-				50CAE86719B4691E000BE31A /* Security.framework in Frameworks */,
-				50CAE86619B46117000BE31A /* CFNetwork.framework in Frameworks */,
-				50CAE86519B4610E000BE31A /* libicucore.dylib in Frameworks */,
-				50CAE86419B460C5000BE31A /* libc++.dylib in Frameworks */,
-				500C023B19B169ED0069DCFD /* XCTest.framework in Frameworks */,
-				500C023D19B169ED0069DCFD /* UIKit.framework in Frameworks */,
-				500C023C19B169ED0069DCFD /* Foundation.framework in Frameworks */,
-				504DB7D119B31313005D2993 /* Firebase.framework in Frameworks */,
-				504DB7D319B31313005D2993 /* FirebaseSimpleLogin.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -225,7 +167,6 @@
 			children = (
 				500C025019B1BEBB0069DCFD /* Resources */,
 				500C022719B169EC0069DCFD /* TravelNow */,
-				500C024019B169ED0069DCFD /* TravelNowTests */,
 				500C027A19B1C0050069DCFD /* Lib */,
 				500C022019B169EC0069DCFD /* Frameworks */,
 				500C021F19B169EC0069DCFD /* Products */,
@@ -237,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				500C021E19B169EC0069DCFD /* TravelNow.app */,
-				500C023919B169ED0069DCFD /* TravelNowTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,21 +216,12 @@
 			path = TravelNow;
 			sourceTree = "<group>";
 		};
-		500C024019B169ED0069DCFD /* TravelNowTests */ = {
-			isa = PBXGroup;
-			children = (
-				500C024619B169ED0069DCFD /* TravelNowTests.m */,
-			);
-			path = TravelNowTests;
-			sourceTree = "<group>";
-		};
 		500C025019B1BEBB0069DCFD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				500C026819B1BF3A0069DCFD /* CoreData */,
 				500C026419B1BF230069DCFD /* Storyboards */,
 				500C025419B1BEC40069DCFD /* TravelNow */,
-				500C025C19B1BECA0069DCFD /* TravelNowTests */,
 				500C025119B1BEBB0069DCFD /* Images.xcassets */,
 			);
 			path = Resources;
@@ -318,32 +249,6 @@
 			isa = PBXGroup;
 			children = (
 				500C025819B1BEC40069DCFD /* InfoPlist.strings */,
-			);
-			path = Strings;
-			sourceTree = "<group>";
-		};
-		500C025C19B1BECA0069DCFD /* TravelNowTests */ = {
-			isa = PBXGroup;
-			children = (
-				500C025D19B1BECA0069DCFD /* Plists */,
-				500C025F19B1BECA0069DCFD /* Strings */,
-			);
-			name = TravelNowTests;
-			path = TravelNowTests/Resources;
-			sourceTree = SOURCE_ROOT;
-		};
-		500C025D19B1BECA0069DCFD /* Plists */ = {
-			isa = PBXGroup;
-			children = (
-				500C025E19B1BECA0069DCFD /* TravelNowTests-Info.plist */,
-			);
-			path = Plists;
-			sourceTree = "<group>";
-		};
-		500C025F19B1BECA0069DCFD /* Strings */ = {
-			isa = PBXGroup;
-			children = (
-				500C026019B1BECA0069DCFD /* InfoPlist.strings */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -498,24 +403,6 @@
 			productReference = 500C021E19B169EC0069DCFD /* TravelNow.app */;
 			productType = "com.apple.product-type.application";
 		};
-		500C023819B169ED0069DCFD /* TravelNowTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 500C024D19B169ED0069DCFD /* Build configuration list for PBXNativeTarget "TravelNowTests" */;
-			buildPhases = (
-				500C023519B169ED0069DCFD /* Sources */,
-				500C023619B169ED0069DCFD /* Frameworks */,
-				500C023719B169ED0069DCFD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				500C023F19B169ED0069DCFD /* PBXTargetDependency */,
-			);
-			name = TravelNowTests;
-			productName = TravelNowTests;
-			productReference = 500C023919B169ED0069DCFD /* TravelNowTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -528,9 +415,6 @@
 				TargetAttributes = {
 					500C021D19B169EC0069DCFD = {
 						DevelopmentTeam = 3D9JCD8WT9;
-					};
-					500C023819B169ED0069DCFD = {
-						TestTargetID = 500C021D19B169EC0069DCFD;
 					};
 				};
 			};
@@ -547,7 +431,6 @@
 			projectRoot = "";
 			targets = (
 				500C021D19B169EC0069DCFD /* TravelNow */,
-				500C023819B169ED0069DCFD /* TravelNowTests */,
 			);
 		};
 /* End PBXProject section */
@@ -560,16 +443,6 @@
 				500C026619B1BF300069DCFD /* Main.storyboard in Resources */,
 				500C025219B1BEBB0069DCFD /* Images.xcassets in Resources */,
 				500C025B19B1BEC40069DCFD /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		500C023719B169ED0069DCFD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				500C026719B1BF300069DCFD /* Main.storyboard in Resources */,
-				500C025319B1BEBB0069DCFD /* Images.xcassets in Resources */,
-				500C026319B1BECA0069DCFD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,48 +511,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		500C023519B169ED0069DCFD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				504DB7F919B31D1C005D2993 /* UIAlertView+Presets.m in Sources */,
-				500974B019B3C47900422506 /* TNTripViewController.m in Sources */,
-				500C028219B1C04A0069DCFD /* main.m in Sources */,
-				504DB7FE19B3224C005D2993 /* JGProgressHUD+Presets.m in Sources */,
-				504DB7EC19B317DE005D2993 /* TNAPIClient.m in Sources */,
-				500C027019B1BF4E0069DCFD /* Main.xcdatamodeld in Sources */,
-				504DB7DB19B31489005D2993 /* NSString+Password.m in Sources */,
-				500974BB19B3DCF500422506 /* MHLabel.m in Sources */,
-				500974AC19B3C01100422506 /* NSDate+Difference.m in Sources */,
-				500C027F19B1C0050069DCFD /* MHLog.m in Sources */,
-				500974A719B3BF0600422506 /* TNTripCell.m in Sources */,
-				500C024719B169ED0069DCFD /* TravelNowTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		500C023F19B169ED0069DCFD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 500C021D19B169EC0069DCFD /* TravelNow */;
-			targetProxy = 500C023E19B169ED0069DCFD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		500C025819B1BEC40069DCFD /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				500C025919B1BEC40069DCFD /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		500C026019B1BECA0069DCFD /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				500C026119B1BECA0069DCFD /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -801,50 +639,6 @@
 			};
 			name = Release;
 		};
-		500C024E19B169ED0069DCFD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9214DB765D743038C5ADFAB /* Pods.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TravelNow.app/TravelNow";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(PROJECT_DIR)/Lib",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TravelNow/TravelNow-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "TravelNowTests/Resources/Plists/TravelNowTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		500C024F19B169ED0069DCFD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9214DB765D743038C5ADFAB /* Pods.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TravelNow.app/TravelNow";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(PROJECT_DIR)/Lib",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TravelNow/TravelNow-Prefix.pch";
-				INFOPLIST_FILE = "TravelNowTests/Resources/Plists/TravelNowTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -862,15 +656,6 @@
 			buildConfigurations = (
 				500C024B19B169ED0069DCFD /* Debug */,
 				500C024C19B169ED0069DCFD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		500C024D19B169ED0069DCFD /* Build configuration list for PBXNativeTarget "TravelNowTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				500C024E19B169ED0069DCFD /* Debug */,
-				500C024F19B169ED0069DCFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
